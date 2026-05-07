@@ -1,0 +1,1570 @@
+[gd_scene format=3 uid="uid://c0w2gbhbs1ya4"]
+
+[ext_resource type="Script" uid="uid://c4x5htv1wj1bd" path="res://game_components/ballsGame/balls_game.gd" id="1_0megd"]
+[ext_resource type="Script" uid="uid://cff1t6jti3bu1" path="res://game_components/ballsGame/platform.gd" id="2_0megd"]
+[ext_resource type="Script" uid="uid://bok35niggfxva" path="res://game_components/ballsGame/ball.gd" id="3_yw6yt"]
+[ext_resource type="Texture2D" uid="uid://celmhgdvhesrm" path="res://art/ballsGame/target.png" id="4_0nyuf"]
+[ext_resource type="Script" uid="uid://dq7kadwi774a" path="res://game_components/ballsGame/block.gd" id="5_0nyuf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywc65"]
+font_size = 35
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jakv2"]
+font_size = 60
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 12
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g6d6o"]
+font_size = 30
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 5
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r8qk7"]
+font_size = 40
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yw6yt"]
+size = Vector2(1173, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0nyuf"]
+size = Vector2(30.75, 1161.471)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18tcc"]
+size = Vector2(28.5, 1161.471)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_po4p8"]
+size = Vector2(25.655533, 1161.471)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_po4p8"]
+radius = 16.03122
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hmldb"]
+radius = 19.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmldb"]
+size = Vector2(92, 92)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yw6yt"]
+font_size = 40
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 12
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ballsGame" type="Node2D" unique_id=809401135]
+position = Vector2(-4, 0)
+script = ExtResource("1_0megd")
+
+[node name="inGameUI" type="CanvasLayer" parent="." unique_id=130730839]
+
+[node name="ButtonExit" type="Node2D" parent="inGameUI" unique_id=873910341]
+position = Vector2(591, -440)
+
+[node name="ColorRect" type="ColorRect" parent="inGameUI/ButtonExit" unique_id=661578384]
+offset_left = 394.0
+offset_top = 450.0
+offset_right = 554.0
+offset_bottom = 511.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="inGameUI/ButtonExit/ColorRect" unique_id=1669901987]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 153.0
+offset_bottom = 54.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title3" type="Label" parent="inGameUI/ButtonExit/ColorRect" unique_id=761365890]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 152.0
+offset_bottom = 54.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_ywc65")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Button" parent="inGameUI/ButtonExit" unique_id=948008497]
+offset_left = 394.0
+offset_top = 451.0
+offset_right = 554.0
+offset_bottom = 510.0
+theme_type_variation = &"FlatButton"
+metadata/_edit_use_anchors_ = true
+
+[node name="StartScreen" type="CanvasLayer" parent="." unique_id=1660502038]
+
+[node name="bg" type="ColorRect" parent="StartScreen" unique_id=52387495]
+offset_left = 312.0
+offset_top = 36.0
+offset_right = 860.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="bg2" type="ColorRect" parent="StartScreen/bg" unique_id=1521908952]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title" type="Label" parent="StartScreen" unique_id=2052980975]
+offset_left = 344.0
+offset_top = 59.0
+offset_right = 816.0
+offset_bottom = 162.0
+text = "Balls Game"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="discribtion" type="Label" parent="StartScreen" unique_id=1204305487]
+offset_left = 351.0
+offset_top = 215.0
+offset_right = 823.0
+offset_bottom = 318.0
+text = "keep your ball up as long as you can"
+label_settings = SubResource("LabelSettings_g6d6o")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonPlay" type="Node2D" parent="StartScreen" unique_id=1856735167]
+position = Vector2(-6, 0)
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonPlay" unique_id=845858520]
+offset_left = 388.0
+offset_top = 426.0
+offset_right = 565.0
+offset_bottom = 494.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonPlay/ColorRect" unique_id=1539315990]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 170.0
+offset_bottom = 61.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title3" type="Label" parent="StartScreen/ButtonPlay/ColorRect" unique_id=386265481]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 171.0
+offset_bottom = 63.0
+text = "Play"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonPlay" type="Button" parent="StartScreen/ButtonPlay" unique_id=740046594]
+offset_left = 387.0
+offset_top = 427.0
+offset_right = 564.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Node2D" parent="StartScreen" unique_id=675920667]
+position = Vector2(248, 2)
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonExit" unique_id=1549305458]
+offset_left = 374.0
+offset_top = 424.0
+offset_right = 549.0
+offset_bottom = 492.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonExit/ColorRect" unique_id=36930919]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 167.0
+offset_bottom = 62.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title3" type="Label" parent="StartScreen/ButtonExit/ColorRect" unique_id=1767106173]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 167.0
+offset_bottom = 64.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Button" parent="StartScreen/ButtonExit" unique_id=135953368]
+offset_left = 372.0
+offset_top = 425.0
+offset_right = 550.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+metadata/_edit_use_anchors_ = true
+
+[node name="GameOverScreen" type="CanvasLayer" parent="." unique_id=497104716]
+visible = false
+
+[node name="bg" type="ColorRect" parent="GameOverScreen" unique_id=563762937]
+offset_left = 318.0
+offset_top = 36.0
+offset_right = 866.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="GameOverScreen/bg" unique_id=418874055]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="title" type="Label" parent="GameOverScreen" unique_id=1307171711]
+offset_left = 355.0
+offset_top = 132.0
+offset_right = 827.0
+offset_bottom = 301.0
+text = "Game over
+(｡•́︿•̀｡)"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonExit" type="Node2D" parent="GameOverScreen" unique_id=230578882]
+position = Vector2(128, -54)
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen/ButtonExit" unique_id=176254845]
+offset_left = 375.0
+offset_top = 450.0
+offset_right = 563.0
+offset_bottom = 517.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=688311650]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 181.0
+offset_bottom = 59.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=1551287874]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 182.0
+offset_bottom = 60.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="GameOverScreen/ButtonExit" unique_id=2139376752]
+offset_left = 372.0
+offset_top = 448.0
+offset_right = 564.0
+offset_bottom = 517.0
+theme_type_variation = &"FlatButton"
+
+[node name="Area2DGameOver" type="Area2D" parent="." unique_id=1933873057]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DGameOver" unique_id=1271887147]
+position = Vector2(575, 660)
+shape = SubResource("RectangleShape2D_yw6yt")
+
+[node name="platform" type="CharacterBody2D" parent="." unique_id=2033924039]
+position = Vector2(575, 569)
+script = ExtResource("2_0megd")
+
+[node name="ColorRect2" type="ColorRect" parent="platform" unique_id=300385974]
+offset_left = -77.0
+offset_top = -17.0
+offset_right = 73.0
+offset_bottom = 18.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="platform/ColorRect2" unique_id=1482512648]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 146.0
+offset_bottom = 30.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="platform" unique_id=405669735]
+position = Vector2(-439, -557)
+polygon = PackedVector2Array(362, 542, 437, 540, 511, 542, 512, 575, 362, 575)
+
+[node name="Wall" type="Node2D" parent="." unique_id=2137156481]
+
+[node name="ColorRect" type="ColorRect" parent="Wall" unique_id=938690396]
+offset_right = 23.0
+offset_bottom = 649.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="Wall/ColorRect" unique_id=298569590]
+visible = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 5.0
+offset_right = 35.0
+offset_bottom = 654.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Wall" unique_id=2000345155]
+offset_left = 1137.0
+offset_top = -3.0
+offset_right = 1158.0
+offset_bottom = 646.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect5" type="ColorRect" parent="Wall/ColorRect2" unique_id=1865978634]
+visible = false
+layout_mode = 0
+offset_left = -11.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 654.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Wall" unique_id=2055906471]
+offset_left = 1142.0
+offset_top = -3.0
+offset_right = 1163.1409
+offset_bottom = 1136.491
+rotation = 1.570595
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect6" type="ColorRect" parent="Wall/ColorRect3" unique_id=979630518]
+visible = false
+layout_mode = 0
+offset_left = 12.999395
+offset_top = 3.0024414
+offset_right = 34.140266
+offset_bottom = 1129.7727
+rotation = 6.311701e-05
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall" unique_id=1215718453]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/StaticBody2D" unique_id=658799281]
+position = Vector2(7.625, 323.5)
+shape = SubResource("RectangleShape2D_0nyuf")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall/StaticBody2D" unique_id=403899550]
+position = Vector2(1151, 343)
+shape = SubResource("RectangleShape2D_18tcc")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Wall/StaticBody2D" unique_id=1112368661]
+position = Vector2(576.233, 5.173472)
+rotation = 1.569161
+shape = SubResource("RectangleShape2D_po4p8")
+
+[node name="ball" type="CharacterBody2D" parent="." unique_id=2073447574]
+script = ExtResource("3_yw6yt")
+
+[node name="Sprite2D" type="Sprite2D" parent="ball" unique_id=233370642]
+position = Vector2(572, 466)
+texture = ExtResource("4_0nyuf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ball" unique_id=1360630520]
+position = Vector2(573, 467)
+shape = SubResource("CircleShape2D_po4p8")
+
+[node name="Area2D" type="Area2D" parent="ball" unique_id=758477246 groups=["ball"]]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ball/Area2D" unique_id=281974439]
+position = Vector2(573, 467)
+shape = SubResource("CircleShape2D_hmldb")
+
+[node name="blocks" type="Node2D" parent="." unique_id=1180987925]
+
+[node name="block1" type="Node2D" parent="blocks" unique_id=129498904]
+position = Vector2(11, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block1" unique_id=1303353502]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block1" unique_id=1302600310]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block1/StaticBody2D" unique_id=2084629996]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block1" unique_id=390561175]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block1/Area2D" unique_id=1630295751]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block1" unique_id=12518726]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block2" type="Node2D" parent="blocks" unique_id=2133058737]
+position = Vector2(110, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block2" unique_id=1572828352]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block2" unique_id=2003173260]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block2/StaticBody2D" unique_id=1844529973]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block2" unique_id=1825592253]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block2/Area2D" unique_id=565263430]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block2" unique_id=2138437060]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block3" type="Node2D" parent="blocks" unique_id=621531473]
+position = Vector2(210, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block3" unique_id=1746332207]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block3" unique_id=556466729]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block3/StaticBody2D" unique_id=1298063498]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block3" unique_id=1716373233]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block3/Area2D" unique_id=188650962]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block3" unique_id=624763104]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block4" type="Node2D" parent="blocks" unique_id=554434417]
+position = Vector2(310, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block4" unique_id=62196914]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block4" unique_id=1200488413]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block4/StaticBody2D" unique_id=1797832828]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block4" unique_id=1759381789]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block4/Area2D" unique_id=570041264]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block4" unique_id=1406032580]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block5" type="Node2D" parent="blocks" unique_id=1714079731]
+position = Vector2(410, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block5" unique_id=446051644]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block5" unique_id=1898576761]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block5/StaticBody2D" unique_id=274910874]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block5" unique_id=512122470]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block5/Area2D" unique_id=1841632194]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block5" unique_id=71033732]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block6" type="Node2D" parent="blocks" unique_id=1669983992]
+position = Vector2(510, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block6" unique_id=1048518194]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block6" unique_id=1751891569]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block6/StaticBody2D" unique_id=1930319936]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block6" unique_id=1834841527]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block6/Area2D" unique_id=250656697]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block6" unique_id=1892853971]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block7" type="Node2D" parent="blocks" unique_id=139151337]
+position = Vector2(609, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block7" unique_id=218244696]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block7" unique_id=1885814820]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block7/StaticBody2D" unique_id=267912335]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block7" unique_id=61888922]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block7/Area2D" unique_id=1125770601]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block7" unique_id=868555348]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block8" type="Node2D" parent="blocks" unique_id=1846623248]
+position = Vector2(708, 4)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block8" unique_id=1088827318]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block8" unique_id=2125531593]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block8/StaticBody2D" unique_id=2007367619]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block8" unique_id=1591840947]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block8/Area2D" unique_id=354749141]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block8" unique_id=1942854965]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block9" type="Node2D" parent="blocks" unique_id=20567751]
+position = Vector2(807, 5)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block9" unique_id=35102823]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block9" unique_id=770671698]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block9/StaticBody2D" unique_id=263168645]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block9" unique_id=864878152]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block9/Area2D" unique_id=361709359]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block9" unique_id=290901944]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block10" type="Node2D" parent="blocks" unique_id=1828730298]
+position = Vector2(905, 5)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block10" unique_id=1773936084]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block10" unique_id=460871056]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block10/StaticBody2D" unique_id=21998462]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block10" unique_id=1276792631]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block10/Area2D" unique_id=1724724792]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block10" unique_id=148659141]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block11" type="Node2D" parent="blocks" unique_id=781154220]
+position = Vector2(1004, 5)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block11" unique_id=196011457]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block11" unique_id=27425700]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block11/StaticBody2D" unique_id=497443927]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block11" unique_id=1299728548]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block11/Area2D" unique_id=1180857482]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block11" unique_id=1616280857]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block12" type="Node2D" parent="blocks" unique_id=1227306478]
+position = Vector2(11, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block12" unique_id=1840496163]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block12" unique_id=644419173]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block12/StaticBody2D" unique_id=1833234070]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block12" unique_id=550752574]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block12/Area2D" unique_id=731989582]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block12" unique_id=5908304]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block13" type="Node2D" parent="blocks" unique_id=1357563975]
+position = Vector2(110, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block13" unique_id=335871878]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block13" unique_id=2036608600]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block13/StaticBody2D" unique_id=1864396124]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block13" unique_id=1216133934]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block13/Area2D" unique_id=1655405874]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block13" unique_id=2072830387]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block14" type="Node2D" parent="blocks" unique_id=287605711]
+position = Vector2(210, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block14" unique_id=147126759]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block14" unique_id=454048104]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block14/StaticBody2D" unique_id=860126952]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block14" unique_id=1800641573]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block14/Area2D" unique_id=1231466359]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block14" unique_id=2093270661]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block15" type="Node2D" parent="blocks" unique_id=107774010]
+position = Vector2(310, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block15" unique_id=329092093]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block15" unique_id=2084983239]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block15/StaticBody2D" unique_id=819505086]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block15" unique_id=1392565989]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block15/Area2D" unique_id=1304853015]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block15" unique_id=1327167924]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block16" type="Node2D" parent="blocks" unique_id=359575745]
+position = Vector2(410, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block16" unique_id=1745391753]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block16" unique_id=17629023]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block16/StaticBody2D" unique_id=2080896511]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block16" unique_id=1150443045]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block16/Area2D" unique_id=1823073730]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block16" unique_id=2041474659]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block17" type="Node2D" parent="blocks" unique_id=662198963]
+position = Vector2(510, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block17" unique_id=1778154335]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block17" unique_id=988088275]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block17/StaticBody2D" unique_id=1564927197]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block17" unique_id=440649782]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block17/Area2D" unique_id=923664273]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block17" unique_id=1401893778]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block18" type="Node2D" parent="blocks" unique_id=250971958]
+position = Vector2(609, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block18" unique_id=921488172]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block18" unique_id=2072862836]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block18/StaticBody2D" unique_id=629302813]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block18" unique_id=106369885]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block18/Area2D" unique_id=1762926241]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block18" unique_id=2141780692]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block19" type="Node2D" parent="blocks" unique_id=1849097482]
+position = Vector2(708, 103)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block19" unique_id=657059073]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block19" unique_id=136391466]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block19/StaticBody2D" unique_id=704337107]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block19" unique_id=554567190]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block19/Area2D" unique_id=344144931]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block19" unique_id=722667534]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block20" type="Node2D" parent="blocks" unique_id=1180212163]
+position = Vector2(807, 104)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block20" unique_id=601568649]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block20" unique_id=1035962544]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block20/StaticBody2D" unique_id=57448359]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block20" unique_id=1966652276]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block20/Area2D" unique_id=1449480659]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block20" unique_id=176162470]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block21" type="Node2D" parent="blocks" unique_id=1324697378]
+position = Vector2(905, 104)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block21" unique_id=1283428889]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block21" unique_id=65693790]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block21/StaticBody2D" unique_id=880962299]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block21" unique_id=456527316]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block21/Area2D" unique_id=1896021071]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block21" unique_id=227853904]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block22" type="Node2D" parent="blocks" unique_id=1967345176]
+position = Vector2(1004, 104)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block22" unique_id=1946529025]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block22" unique_id=1023066946]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block22/StaticBody2D" unique_id=80893325]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block22" unique_id=603185094]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block22/Area2D" unique_id=63465747]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block22" unique_id=1364496654]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block23" type="Node2D" parent="blocks" unique_id=502770245]
+position = Vector2(11, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block23" unique_id=1629145208]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block23" unique_id=1696438617]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block23/StaticBody2D" unique_id=1874159589]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block23" unique_id=1886069591]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block23/Area2D" unique_id=1603179070]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block23" unique_id=1367991507]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block24" type="Node2D" parent="blocks" unique_id=1764252422]
+position = Vector2(110, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block24" unique_id=1241735188]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block24" unique_id=871577587]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block24/StaticBody2D" unique_id=1620352196]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block24" unique_id=246059909]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block24/Area2D" unique_id=312646456]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block24" unique_id=167243963]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block25" type="Node2D" parent="blocks" unique_id=397943035]
+position = Vector2(210, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block25" unique_id=64315922]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block25" unique_id=1505517478]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block25/StaticBody2D" unique_id=1625860847]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block25" unique_id=1503797658]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block25/Area2D" unique_id=1627381031]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block25" unique_id=453626864]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block26" type="Node2D" parent="blocks" unique_id=36426488]
+position = Vector2(310, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block26" unique_id=1356787931]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block26" unique_id=549636311]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block26/StaticBody2D" unique_id=1726977155]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block26" unique_id=1689053399]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block26/Area2D" unique_id=1225102774]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block26" unique_id=6680944]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block27" type="Node2D" parent="blocks" unique_id=1022252869]
+position = Vector2(410, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block27" unique_id=1702678993]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block27" unique_id=1929774482]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block27/StaticBody2D" unique_id=1933239901]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block27" unique_id=1207248059]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block27/Area2D" unique_id=1084319214]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block27" unique_id=354491242]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block28" type="Node2D" parent="blocks" unique_id=142349516]
+position = Vector2(510, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block28" unique_id=443104627]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block28" unique_id=2028969681]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block28/StaticBody2D" unique_id=1211425768]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block28" unique_id=1718112939]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block28/Area2D" unique_id=1450468757]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block28" unique_id=1970142938]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block29" type="Node2D" parent="blocks" unique_id=890266854]
+position = Vector2(609, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block29" unique_id=1590526960]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block29" unique_id=192273122]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block29/StaticBody2D" unique_id=1842845601]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block29" unique_id=918095679]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block29/Area2D" unique_id=226360385]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block29" unique_id=211979495]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block30" type="Node2D" parent="blocks" unique_id=302648697]
+position = Vector2(708, 202)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block30" unique_id=1064004797]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block30" unique_id=2098066171]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block30/StaticBody2D" unique_id=1268132278]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block30" unique_id=1365935473]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block30/Area2D" unique_id=818172109]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block30" unique_id=796889813]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block31" type="Node2D" parent="blocks" unique_id=1194175513]
+position = Vector2(807, 203)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block31" unique_id=684672725]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block31" unique_id=2053698417]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block31/StaticBody2D" unique_id=1876483774]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block31" unique_id=554155952]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block31/Area2D" unique_id=53476836]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block31" unique_id=891121777]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block32" type="Node2D" parent="blocks" unique_id=210152313]
+position = Vector2(905, 203)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block32" unique_id=1809481812]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block32" unique_id=2104359815]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block32/StaticBody2D" unique_id=481085769]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block32" unique_id=1923765083]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block32/Area2D" unique_id=1468368162]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block32" unique_id=1474647345]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block33" type="Node2D" parent="blocks" unique_id=414297272]
+position = Vector2(1004, 203)
+script = ExtResource("5_0nyuf")
+
+[node name="ColorRect" type="ColorRect" parent="blocks/block33" unique_id=138909934]
+offset_left = 26.0
+offset_top = 21.0
+offset_right = 66.0
+offset_bottom = 61.0
+scale = Vector2(2.3, 2.3)
+color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blocks/block33" unique_id=1510659912]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block33/StaticBody2D" unique_id=578681407]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Area2D" type="Area2D" parent="blocks/block33" unique_id=1713633039]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blocks/block33/Area2D" unique_id=570588020]
+position = Vector2(72, 67)
+shape = SubResource("RectangleShape2D_hmldb")
+
+[node name="Label" type="Label" parent="blocks/block33" unique_id=2095693103]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 117.0
+offset_bottom = 113.0
+text = "3"
+label_settings = SubResource("LabelSettings_yw6yt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="inGameUI/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonPlay/ButtonPlay" to="." method="_on_button_play_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="GameOverScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="area_entered" from="Area2DGameOver" to="." method="_on_area_2d_game_over_area_entered"]
+[connection signal="area_entered" from="blocks/block1/Area2D" to="blocks/block1" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block2/Area2D" to="blocks/block2" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block3/Area2D" to="blocks/block3" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block4/Area2D" to="blocks/block4" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block5/Area2D" to="blocks/block5" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block6/Area2D" to="blocks/block6" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block7/Area2D" to="blocks/block7" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block8/Area2D" to="blocks/block8" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block9/Area2D" to="blocks/block9" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block10/Area2D" to="blocks/block10" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block11/Area2D" to="blocks/block11" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block12/Area2D" to="blocks/block12" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block13/Area2D" to="blocks/block13" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block14/Area2D" to="blocks/block14" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block15/Area2D" to="blocks/block15" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block16/Area2D" to="blocks/block16" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block17/Area2D" to="blocks/block17" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block18/Area2D" to="blocks/block18" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block19/Area2D" to="blocks/block19" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block20/Area2D" to="blocks/block20" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block21/Area2D" to="blocks/block21" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block22/Area2D" to="blocks/block22" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block23/Area2D" to="blocks/block23" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block24/Area2D" to="blocks/block24" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block25/Area2D" to="blocks/block25" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block26/Area2D" to="blocks/block26" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block27/Area2D" to="blocks/block27" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block28/Area2D" to="blocks/block28" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block29/Area2D" to="blocks/block29" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block30/Area2D" to="blocks/block30" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block31/Area2D" to="blocks/block31" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block32/Area2D" to="blocks/block32" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="blocks/block33/Area2D" to="blocks/block33" method="_on_area_2d_area_entered"]

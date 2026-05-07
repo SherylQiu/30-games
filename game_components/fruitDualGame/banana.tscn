@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://o0ma1hcsjcxj"]
+
+[ext_resource type="PackedScene" uid="uid://cmyo2r38jnxrc" path="res://game_components/fruitDualGame/apple.tscn" id="1_o7fsp"]
+[ext_resource type="Texture2D" uid="uid://ct8k1h4y0e3fn" path="res://art/fruitDualGame/Fruits_Separated/Banana.png" id="2_cn8du"]
+
+[node name="banana" unique_id=488418765 instance=ExtResource("1_o7fsp")]
+
+[node name="Sprite2D" parent="wholeSprite" parent_id_path=PackedInt32Array(1008454437) index="0" unique_id=283976682]
+texture = ExtResource("2_cn8du")
+
+[node name="Sprite2D" parent="sliceRight/half1/half1" parent_id_path=PackedInt32Array(886300115) index="0" unique_id=1982396982]
+texture = ExtResource("2_cn8du")
+
+[node name="half2" parent="sliceRight/half2" parent_id_path=PackedInt32Array(154187016) index="0" unique_id=64285829]
+offset_top = 0.0
+offset_bottom = 77.0
+
+[node name="Sprite2D" parent="sliceRight/half2/half2" index="0" unique_id=470957693]
+texture = ExtResource("2_cn8du")
+
+[node name="Sprite2D" parent="sliceDown/half1/half1" parent_id_path=PackedInt32Array(1949426210) index="0" unique_id=1653280969]
+texture = ExtResource("2_cn8du")
+
+[node name="Sprite2D" parent="sliceDown/half2/half1" parent_id_path=PackedInt32Array(1744396898) index="0" unique_id=1807455058]
+texture = ExtResource("2_cn8du")
+
+[node name="Sprite2D" parent="slicedRightSlashed/half1/half1" parent_id_path=PackedInt32Array(35464795) index="0" unique_id=1790866865]
+texture = ExtResource("2_cn8du")
+
+[node name="Sprite2D" parent="slicedRightSlashed/half2/half1" parent_id_path=PackedInt32Array(843715931) index="0" unique_id=835945370]
+texture = ExtResource("2_cn8du")
+
+[node name="Sprite2D" parent="slicedLeftSlashed/half1/half1" parent_id_path=PackedInt32Array(1307197544) index="0" unique_id=1090440015]
+texture = ExtResource("2_cn8du")
+
+[node name="Sprite2D" parent="slicedLeftSlashed/half2/half1" parent_id_path=PackedInt32Array(402376735) index="0" unique_id=436649191]
+texture = ExtResource("2_cn8du")

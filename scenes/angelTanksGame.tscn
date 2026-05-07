@@ -1,0 +1,726 @@
+[gd_scene format=4 uid="uid://drophkd2nfo2f"]
+
+[ext_resource type="Texture2D" uid="uid://ycwbpwsik6s3" path="res://art/angleTanksGame/Environment/dirt.png" id="1_rx2p8"]
+[ext_resource type="Script" uid="uid://b7x5rnfq67h1h" path="res://game_components/AngleTanksGame/angel_tanks_game.gd" id="1_wav36"]
+[ext_resource type="Texture2D" uid="uid://7sub4neh3qht" path="res://art/angleTanksGame/Environment/grass.png" id="2_l6mj8"]
+[ext_resource type="Texture2D" uid="uid://ok30hapn76nx" path="res://art/angleTanksGame/Obstacles/barrelGreen_side.png" id="2_tccqw"]
+[ext_resource type="Texture2D" uid="uid://dxglparfbk3is" path="res://art/angleTanksGame/Environment/sand.png" id="3_s8w8p"]
+[ext_resource type="Script" uid="uid://cecuryjtkijto" path="res://game_components/AngleTanksGame/player.gd" id="5_g3tnj"]
+[ext_resource type="PackedScene" uid="uid://ovg8chfv4buq" path="res://game_components/AngleTanksGame/bullet.tscn" id="6_onjd7"]
+[ext_resource type="Texture2D" uid="uid://bcf5umc0yom10" path="res://art/angleTanksGame/Tanks/tankBlue_outline.png" id="7_r82mq"]
+[ext_resource type="Texture2D" uid="uid://btt8t5gsvk77o" path="res://art/angleTanksGame/Tanks/barrelBlue_outline.png" id="8_wav36"]
+[ext_resource type="Script" uid="uid://hlb8i6w0p0qa" path="res://game_components/AngleTanksGame/opponent.gd" id="9_onjd7"]
+[ext_resource type="Texture2D" uid="uid://nid3h3a017j7" path="res://art/angleTanksGame/Tanks/tankRed_outline.png" id="9_xxv22"]
+[ext_resource type="Texture2D" uid="uid://butgu54qjfjcd" path="res://art/angleTanksGame/Tanks/barrelRed_outline.png" id="10_6kp1y"]
+[ext_resource type="PackedScene" uid="uid://cmxlbo2uksltd" path="res://game_components/AngleTanksGame/opponentBullet.tscn" id="10_r82mq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywc65"]
+font_size = 35
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jakv2"]
+font_size = 60
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 12
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g6d6o"]
+font_size = 30
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 5
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r8qk7"]
+font_size = 40
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6mj8"]
+texture = ExtResource("1_rx2p8")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_npv5s"]
+texture = ExtResource("2_l6mj8")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yk80a"]
+texture = ExtResource("3_s8w8p")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_s8w8p"]
+sources/0 = SubResource("TileSetAtlasSource_l6mj8")
+sources/1 = SubResource("TileSetAtlasSource_npv5s")
+sources/2 = SubResource("TileSetAtlasSource_yk80a")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_78lvt"]
+texture = ExtResource("1_rx2p8")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ow4b"]
+texture = ExtResource("2_tccqw")
+texture_region_size = Vector2i(44, 62)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(22.05307, 30.99767, 22.361504, -30.997671, -22, -31.599998, -22.05307, 31.30611)
+1:0/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_npv5s"]
+tile_size = Vector2i(44, 62)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_78lvt")
+sources/3 = SubResource("TileSetAtlasSource_7ow4b")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5rnq1"]
+size = Vector2(62, 53)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0uv8d"]
+size = Vector2(62, 64)
+
+[node name="angleTaknkGame" type="Node2D" unique_id=809401135]
+script = ExtResource("1_wav36")
+
+[node name="inGameUI" type="CanvasLayer" parent="." unique_id=130730839]
+
+[node name="ButtonExit" type="Node2D" parent="inGameUI" unique_id=873910341]
+position = Vector2(566, -432)
+
+[node name="ColorRect" type="ColorRect" parent="inGameUI/ButtonExit" unique_id=661578384]
+offset_left = 400.0
+offset_top = 450.0
+offset_right = 560.0
+offset_bottom = 511.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="inGameUI/ButtonExit/ColorRect" unique_id=1669901987]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 153.0
+offset_bottom = 54.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="inGameUI/ButtonExit/ColorRect" unique_id=761365890]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 152.0
+offset_bottom = 54.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_ywc65")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="inGameUI/ButtonExit" unique_id=948008497]
+offset_left = 400.0
+offset_top = 451.0
+offset_right = 560.0
+offset_bottom = 510.0
+theme_type_variation = &"FlatButton"
+
+[node name="StartScreen" type="CanvasLayer" parent="." unique_id=1660502038]
+
+[node name="bg" type="ColorRect" parent="StartScreen" unique_id=52387495]
+offset_left = 318.0
+offset_top = 36.0
+offset_right = 866.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="StartScreen/bg" unique_id=1521908952]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="title" type="Label" parent="StartScreen" unique_id=2052980975]
+offset_left = 350.0
+offset_top = 59.0
+offset_right = 822.0
+offset_bottom = 162.0
+text = "Angle Tanks"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="discribtion" type="Label" parent="StartScreen" unique_id=1204305487]
+offset_left = 353.0
+offset_top = 236.0
+offset_right = 825.0
+offset_bottom = 339.0
+text = "Play as a blue tank and attack the red tanks"
+label_settings = SubResource("LabelSettings_g6d6o")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonPlay" type="Node2D" parent="StartScreen" unique_id=1856735167]
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonPlay" unique_id=845858520]
+offset_left = 388.0
+offset_top = 426.0
+offset_right = 565.0
+offset_bottom = 494.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonPlay/ColorRect" unique_id=1539315990]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 170.0
+offset_bottom = 61.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="StartScreen/ButtonPlay/ColorRect" unique_id=386265481]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 171.0
+offset_bottom = 63.0
+text = "Play"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonPlay" type="Button" parent="StartScreen/ButtonPlay" unique_id=740046594]
+offset_left = 387.0
+offset_top = 427.0
+offset_right = 564.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+
+[node name="ButtonExit" type="Node2D" parent="StartScreen" unique_id=675920667]
+position = Vector2(254, 2)
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonExit" unique_id=1549305458]
+offset_left = 374.0
+offset_top = 424.0
+offset_right = 549.0
+offset_bottom = 492.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonExit/ColorRect" unique_id=36930919]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 167.0
+offset_bottom = 62.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="StartScreen/ButtonExit/ColorRect" unique_id=1767106173]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 167.0
+offset_bottom = 64.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="StartScreen/ButtonExit" unique_id=135953368]
+offset_left = 372.0
+offset_top = 425.0
+offset_right = 550.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameOverScreen" type="CanvasLayer" parent="." unique_id=497104716]
+visible = false
+
+[node name="bg" type="ColorRect" parent="GameOverScreen" unique_id=563762937]
+offset_left = 318.0
+offset_top = 36.0
+offset_right = 866.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="GameOverScreen/bg" unique_id=418874055]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="title" type="Label" parent="GameOverScreen" unique_id=1307171711]
+offset_left = 355.0
+offset_top = 132.0
+offset_right = 827.0
+offset_bottom = 301.0
+text = "Game over
+(｡•́︿•̀｡)"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonExit" type="Node2D" parent="GameOverScreen" unique_id=230578882]
+position = Vector2(128, -54)
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen/ButtonExit" unique_id=176254845]
+offset_left = 375.0
+offset_top = 450.0
+offset_right = 563.0
+offset_bottom = 517.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=688311650]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 181.0
+offset_bottom = 59.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=1551287874]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 182.0
+offset_bottom = 60.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="GameOverScreen/ButtonExit" unique_id=2139376752]
+offset_left = 372.0
+offset_top = 448.0
+offset_right = 564.0
+offset_bottom = 517.0
+theme_type_variation = &"FlatButton"
+
+[node name="map" type="Node2D" parent="." unique_id=1331040424]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="map" unique_id=1298110557]
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAAAAAAAgAAAAAAAAAAAAEAAgAAAAEAAAAAAAIAAgAAAAIAAAAAAAMAAgAAAAMAAAAAAAQAAgAAAAQAAAAAAAUAAgAAAAUAAAAAAAYAAgAAAAYAAAAAAAcAAgAAAAcAAAABAAAAAgABAAAAAAABAAEAAgABAAEAAAABAAIAAgABAAIAAAABAAMAAgABAAMAAAABAAQAAgABAAQAAAABAAUAAgABAAUAAAABAAYAAgABAAYAAAABAAcAAgABAAcAAAACAAAAAgACAAAAAAACAAEAAgACAAEAAAACAAIAAgACAAIAAAACAAQAAgACAAQAAAACAAUAAgACAAUAAAACAAYAAgACAAYAAAACAAcAAgACAAcAAAADAAAAAgADAAAAAAADAAEAAgADAAEAAAADAAIAAgADAAIAAAADAAQAAgADAAQAAAADAAUAAgADAAUAAAADAAYAAgADAAYAAAADAAcAAgADAAcAAAAEAAAAAgAEAAAAAAAEAAEAAgAEAAEAAAAEAAIAAgAEAAIAAAAEAAMAAgAEAAMAAAAEAAQAAgAEAAQAAAAEAAUAAgAEAAUAAAAEAAYAAgAEAAYAAAAEAAcAAgAEAAcAAAAFAAAAAgAFAAAAAAAFAAEAAgAFAAEAAAAFAAIAAgAFAAIAAAAFAAMAAgAFAAMAAAAFAAQAAgAFAAQAAAAFAAUAAgAFAAUAAAAFAAYAAgAFAAYAAAAFAAcAAgAFAAcAAAAGAAAAAgAGAAAAAAAGAAEAAgAGAAEAAAAGAAIAAgAGAAIAAAAGAAMAAgAGAAMAAAAGAAQAAgAGAAQAAAAGAAUAAgAGAAUAAAAGAAYAAgAGAAYAAAAGAAcAAgAGAAcAAAAHAAAAAgAHAAAAAAAHAAEAAgAHAAEAAAAHAAIAAgAHAAIAAAAHAAMAAgAHAAMAAAAHAAQAAgAHAAQAAAAHAAUAAgAHAAUAAAAHAAYAAgAHAAYAAAAHAAcAAgAHAAcAAAAIAAAAAgAAAAAAAAAIAAEAAgAAAAEAAAAIAAIAAgAAAAIAAAAIAAMAAgAAAAMAAAAIAAQAAgAAAAQAAAAIAAUAAgAAAAUAAAAIAAYAAgAAAAYAAAAIAAcAAgAAAAcAAAAJAAAAAgABAAAAAAAJAAEAAgABAAEAAAAJAAIAAgABAAIAAAAJAAMAAgABAAMAAAAJAAQAAgABAAQAAAAJAAUAAgABAAUAAAAJAAYAAgABAAYAAAAJAAcAAgABAAcAAAAKAAAAAgACAAAAAAAKAAEAAgACAAEAAAAKAAIAAgACAAIAAAAKAAMAAgACAAMAAAAKAAQAAgACAAQAAAAKAAUAAgACAAUAAAAKAAYAAgACAAYAAAAKAAcAAgACAAcAAAALAAAAAgADAAAAAAALAAEAAgADAAEAAAALAAIAAgADAAIAAAALAAMAAgADAAMAAAALAAQAAgADAAQAAAALAAUAAgADAAUAAAALAAYAAgADAAYAAAALAAcAAgADAAcAAAAMAAAAAgAEAAAAAAAMAAEAAgAEAAEAAAAMAAIAAgAEAAIAAAAMAAMAAgAEAAMAAAAMAAQAAgAEAAQAAAAMAAUAAgAEAAUAAAAMAAYAAgAEAAYAAAAMAAcAAgAEAAcAAAANAAAAAgAFAAAAAAANAAEAAgAFAAEAAAANAAIAAgAFAAIAAAANAAMAAgAFAAMAAAANAAQAAgAFAAQAAAANAAUAAgAFAAUAAAANAAYAAgAFAAYAAAANAAcAAgAFAAcAAAAOAAAAAgAGAAAAAAAOAAEAAgAGAAEAAAAOAAIAAgAGAAIAAAAOAAMAAgAGAAMAAAAOAAQAAgAGAAQAAAAOAAUAAgAGAAUAAAAOAAYAAgAGAAYAAAAOAAcAAgAGAAcAAAAPAAAAAgAHAAAAAAAPAAEAAgAHAAEAAAAPAAIAAgAHAAIAAAAPAAMAAgAHAAMAAAAPAAQAAgAHAAQAAAAPAAUAAgAHAAUAAAAPAAYAAgAHAAYAAAAPAAcAAgAHAAcAAAAQAAAAAgAAAAAAAAAQAAEAAgAAAAEAAAAQAAIAAgAAAAIAAAAQAAMAAgAAAAMAAAAQAAQAAgAAAAQAAAAQAAUAAgAAAAUAAAAQAAYAAgAAAAYAAAAQAAcAAgAAAAcAAAARAAAAAgABAAAAAAARAAEAAgABAAEAAAARAAIAAgABAAIAAAARAAMAAgABAAMAAAARAAQAAgABAAQAAAARAAUAAgABAAUAAAARAAYAAgABAAYAAAARAAcAAgABAAcAAAASAAAAAgACAAAAAAASAAEAAgACAAEAAAASAAIAAgACAAIAAAASAAMAAgACAAMAAAASAAQAAgACAAQAAAASAAUAAgACAAUAAAASAAYAAgACAAYAAAASAAcAAgACAAcAAAATAAAAAgADAAAAAAATAAEAAgADAAEAAAATAAIAAgADAAIAAAATAAMAAgADAAMAAAATAAQAAgADAAQAAAATAAUAAgADAAUAAAATAAYAAgADAAYAAAATAAcAAgADAAcAAAAUAAAAAgAEAAAAAAAUAAEAAgAEAAEAAAAUAAIAAgAEAAIAAAAUAAMAAgAEAAMAAAAUAAQAAgAEAAQAAAAUAAUAAgAEAAUAAAAUAAYAAgAEAAYAAAAUAAcAAgAEAAcAAAAVAAAAAgAFAAAAAAAVAAEAAgAFAAEAAAAVAAIAAgAFAAIAAAAVAAMAAgAFAAMAAAAVAAQAAgAFAAQAAAAVAAUAAgAFAAUAAAAVAAYAAgAFAAYAAAAVAAcAAgAFAAcAAAAWAAAAAgAGAAAAAAAWAAEAAgAGAAEAAAAWAAIAAgAGAAIAAAAWAAMAAgAGAAMAAAAWAAQAAgAGAAQAAAAWAAUAAgAGAAUAAAAWAAYAAgAGAAYAAAAWAAcAAgAGAAcAAAAXAAAAAgAHAAAAAAAXAAEAAgAHAAEAAAAXAAIAAgAHAAIAAAAXAAMAAgAHAAMAAAAXAAQAAgAHAAQAAAAXAAUAAgAHAAUAAAAXAAYAAgAHAAYAAAAXAAcAAgAHAAcAAAAQAAgAAgAAAAAAAAAQAAkAAgAAAAEAAAAQAAoAAgAAAAIAAAAQAAsAAgAAAAMAAAAQAAwAAgAAAAQAAAAQAA0AAgAAAAUAAAAQAA4AAgAAAAYAAAAQAA8AAgAAAAcAAAARAAgAAgABAAAAAAARAAkAAgABAAEAAAARAAoAAgABAAIAAAARAAsAAgABAAMAAAARAAwAAgABAAQAAAARAA0AAgABAAUAAAARAA4AAgABAAYAAAARAA8AAgABAAcAAAASAAgAAgACAAAAAAASAAkAAgACAAEAAAASAAoAAgACAAIAAAASAAsAAgACAAMAAAASAAwAAgACAAQAAAASAA0AAgACAAUAAAASAA4AAgACAAYAAAASAA8AAgACAAcAAAATAAgAAgADAAAAAAATAAkAAgADAAEAAAATAAoAAgADAAIAAAATAAsAAgADAAMAAAATAAwAAgADAAQAAAATAA0AAgADAAUAAAATAA4AAgADAAYAAAATAA8AAgADAAcAAAAUAAgAAgAEAAAAAAAUAAkAAgAEAAEAAAAUAAoAAgAEAAIAAAAUAAsAAgAEAAMAAAAUAAwAAgAEAAQAAAAUAA0AAgAEAAUAAAAUAA4AAgAEAAYAAAAUAA8AAgAEAAcAAAAVAAgAAgAFAAAAAAAVAAkAAgAFAAEAAAAVAAoAAgAFAAIAAAAVAAsAAgAFAAMAAAAVAAwAAgAFAAQAAAAVAA0AAgAFAAUAAAAVAA4AAgAFAAYAAAAVAA8AAgAFAAcAAAAWAAgAAgAGAAAAAAAWAAkAAgAGAAEAAAAWAAoAAgAGAAIAAAAWAAsAAgAGAAMAAAAWAAwAAgAGAAQAAAAWAA0AAgAGAAUAAAAWAA4AAgAGAAYAAAAWAA8AAgAGAAcAAAAXAAgAAgAHAAAAAAAXAAkAAgAHAAEAAAAXAAoAAgAHAAIAAAAXAAsAAgAHAAMAAAAXAAwAAgAHAAQAAAAXAA0AAgAHAAUAAAAXAA4AAgAHAAYAAAAXAA8AAgAHAAcAAAAIAAgAAgAAAAAAAAAIAAkAAgAAAAEAAAAIAAoAAgAAAAIAAAAIAAsAAgAAAAMAAAAIAAwAAgAAAAQAAAAIAA0AAgAAAAUAAAAIAA4AAgAAAAYAAAAIAA8AAgAAAAcAAAAJAAgAAgABAAAAAAAJAAkAAgABAAEAAAAJAAoAAgABAAIAAAAJAAsAAgABAAMAAAAJAAwAAgABAAQAAAAJAA0AAgABAAUAAAAJAA4AAgABAAYAAAAJAA8AAgABAAcAAAAKAAgAAgACAAAAAAAKAAkAAgACAAEAAAAKAAoAAgACAAIAAAAKAAsAAgACAAMAAAAKAAwAAgACAAQAAAAKAA0AAgACAAUAAAAKAA4AAgACAAYAAAAKAA8AAgACAAcAAAALAAgAAgADAAAAAAALAAkAAgADAAEAAAALAAoAAgADAAIAAAALAAsAAgADAAMAAAALAAwAAgADAAQAAAALAA0AAgADAAUAAAALAA4AAgADAAYAAAALAA8AAgADAAcAAAAMAAgAAgAEAAAAAAAMAAkAAgAEAAEAAAAMAAoAAgAEAAIAAAAMAAsAAgAEAAMAAAAMAAwAAgAEAAQAAAAMAA0AAgAEAAUAAAAMAA4AAgAEAAYAAAAMAA8AAgAEAAcAAAANAAgAAgAFAAAAAAANAAkAAgAFAAEAAAANAAoAAgAFAAIAAAANAAsAAgAFAAMAAAANAAwAAgAFAAQAAAANAA0AAgAFAAUAAAANAA4AAgAFAAYAAAANAA8AAgAFAAcAAAAOAAgAAgAGAAAAAAAOAAkAAgAGAAEAAAAOAAoAAgAGAAIAAAAOAAsAAgAGAAMAAAAOAAwAAgAGAAQAAAAOAA0AAgAGAAUAAAAOAA4AAgAGAAYAAAAOAA8AAgAGAAcAAAAPAAgAAgAHAAAAAAAPAAkAAgAHAAEAAAAPAAoAAgAHAAIAAAAPAAsAAgAHAAMAAAAPAAwAAgAHAAQAAAAPAA0AAgAHAAUAAAAPAA4AAgAHAAYAAAAPAA8AAgAHAAcAAAAAAAkAAgAAAAEAAAAAAAoAAgAAAAIAAAAAAAsAAgAAAAMAAAAAAAwAAgAAAAQAAAAAAA0AAgAAAAUAAAAAAA4AAgAAAAYAAAAAAA8AAgAAAAcAAAABAAgAAgABAAAAAAABAAkAAgABAAEAAAABAAoAAgABAAIAAAABAAsAAgABAAMAAAABAAwAAgABAAQAAAABAA0AAgABAAUAAAABAA4AAgABAAYAAAABAA8AAgABAAcAAAACAAgAAgACAAAAAAACAAkAAgACAAEAAAACAAoAAgACAAIAAAACAAsAAgACAAMAAAACAAwAAgACAAQAAAACAA0AAgACAAUAAAACAA4AAgACAAYAAAACAA8AAgACAAcAAAADAAgAAgADAAAAAAADAAkAAgADAAEAAAADAAoAAgADAAIAAAADAAsAAgADAAMAAAADAAwAAgADAAQAAAADAA0AAgADAAUAAAADAA4AAgADAAYAAAADAA8AAgADAAcAAAAEAAgAAgAEAAAAAAAEAAkAAgAEAAEAAAAEAAoAAgAEAAIAAAAEAAsAAgAEAAMAAAAEAAwAAgAEAAQAAAAEAA0AAgAEAAUAAAAEAA4AAgAEAAYAAAAEAA8AAgAEAAcAAAAFAAgAAgAFAAAAAAAFAAkAAgAFAAEAAAAFAAoAAgAFAAIAAAAFAAsAAgAFAAMAAAAFAAwAAgAFAAQAAAAFAA0AAgAFAAUAAAAFAA4AAgAFAAYAAAAFAA8AAgAFAAcAAAAGAAgAAgAGAAAAAAAGAAkAAgAGAAEAAAAGAAoAAgAGAAIAAAAGAAsAAgAGAAMAAAAGAAwAAgAGAAQAAAAGAA0AAgAGAAUAAAAGAA4AAgAGAAYAAAAGAA8AAgAGAAcAAAAHAAgAAgAHAAAAAAAHAAkAAgAHAAEAAAAHAAoAAgAHAAIAAAAHAAsAAgAHAAMAAAAHAAwAAgAHAAQAAAAHAA0AAgAHAAUAAAAHAA4AAgAHAAYAAAAHAA8AAgAHAAcAAAAAAAgAAgAAAAAAAAD//wAAAgAEAAEAAAD//wEAAgAEAAIAAAD//wIAAgAEAAMAAAACAAMAAgACAAMAAAADAAMAAgADAAMAAAA=")
+tile_set = SubResource("TileSet_s8w8p")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="map" unique_id=1857768605]
+position = Vector2(-23, -9.536743e-07)
+scale = Vector2(1.7054607, 1.4000589)
+tile_map_data = PackedByteArray("AAD//wAAAwAAAAAAAAD//wEAAwAAAAAAAAD//wIAAwAAAAAAAAD//wMAAwAAAAAAAAD//wQAAwAAAAAAAAD//wUAAwAAAAAAAAD//wYAAwAAAAAAAAD//wcAAwAAAAAAAAAAAAAAAwAAAAAAAAAAAAEAAwAAAAAAAAAAAAIAAwAAAAAAAAAAAAMAAwAAAAAAAAAAAAQAAwAAAAAAAAAAAAUAAwAAAAAAAAAAAAYAAwAAAAAAAAAAAAcAAwAAAAAAAAABAAAAAwAAAAAAAAABAAMAAwAAAAAAAAABAAcAAwAAAAAAAAACAAAAAwAAAAAAAAACAAMAAwAAAAAAAAACAAcAAwAAAAAAAAADAAAAAwAAAAAAAAADAAMAAwAAAAAAAAADAAYAAwAAAAAAAAADAAcAAwAAAAAAAAAEAAAAAwAAAAAAAAAEAAMAAwAAAAAAAAAEAAYAAwAAAAAAAAAEAAcAAwAAAAAAAAAFAAAAAwAAAAAAAAAFAAcAAwAAAAAAAAAGAAAAAwAAAAAAAAAGAAcAAwAAAAAAAAAHAAAAAwAAAAAAAAAHAAIAAwAAAAAAAAAHAAMAAwAAAAAAAAAHAAQAAwAAAAAAAAAHAAcAAwAAAAAAAAAIAAAAAwAAAAAAAAAIAAIAAwAAAAAAAAAIAAcAAwAAAAAAAAAJAAAAAwAAAAAAAAAJAAIAAwAAAAAAAAAJAAcAAwAAAAAAAAAKAAAAAwAAAAAAAAAKAAIAAwAAAAAAAAAKAAMAAwAAAAAAAAAKAAQAAwAAAAAAAAAKAAcAAwAAAAAAAAALAAAAAwAAAAAAAAALAAcAAwAAAAAAAAAMAAAAAwAAAAAAAAAMAAcAAwAAAAAAAAANAAAAAwAAAAAAAAANAAQAAwAAAAAAAAANAAUAAwAAAAAAAAANAAcAAwAAAAAAAAAOAAAAAwAAAAAAAAAOAAQAAwAAAAAAAAAOAAUAAwAAAAAAAAAOAAcAAwAAAAAAAAAPAAAAAwAAAAAAAAAPAAEAAwAAAAAAAAAPAAIAAwAAAAAAAAAPAAMAAwAAAAAAAAAPAAQAAwAAAAAAAAAPAAUAAwAAAAAAAAAPAAYAAwAAAAAAAAAPAAcAAwAAAAAAAAAQAAAAAwAAAAAAAAAQAAEAAwAAAAAAAAAQAAIAAwAAAAAAAAAQAAMAAwAAAAAAAAAQAAQAAwAAAAAAAAAQAAUAAwAAAAAAAAAQAAYAAwAAAAAAAAAQAAcAAwAAAAAAAAA=")
+tile_set = SubResource("TileSet_npv5s")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=125854918]
+position = Vector2(172, 173)
+script = ExtResource("5_g3tnj")
+bullet_scene = ExtResource("6_onjd7")
+
+[node name="body" type="Node2D" parent="Player" unique_id=891466656]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/body" unique_id=333415720]
+position = Vector2(1.9669533e-06, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_r82mq")
+
+[node name="turret" type="Node2D" parent="Player" unique_id=1752592032]
+position = Vector2(-2, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/turret" unique_id=1502927176]
+position = Vector2(23, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("8_wav36")
+
+[node name="bulletSpawnPoint" type="Node2D" parent="Player/turret" unique_id=623679973]
+position = Vector2(52.999985, 0)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1107115050]
+shape = SubResource("RectangleShape2D_5rnq1")
+
+[node name="Area2D" type="Area2D" parent="Player" unique_id=2089572230]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D" unique_id=1232927171]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_0uv8d")
+
+[node name="FireRateTimer" type="Timer" parent="Player" unique_id=232020580]
+
+[node name="opponent" type="CharacterBody2D" parent="." unique_id=593950098]
+position = Vector2(133, 460)
+script = ExtResource("9_onjd7")
+bullet_scene = ExtResource("10_r82mq")
+
+[node name="body" type="Node2D" parent="opponent" unique_id=1704155550]
+
+[node name="Sprite2D" type="Sprite2D" parent="opponent/body" unique_id=1032682299]
+position = Vector2(1.9073486e-06, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("9_xxv22")
+
+[node name="turret" type="Node2D" parent="opponent" unique_id=1125596078]
+
+[node name="Sprite2D" type="Sprite2D" parent="opponent/turret" unique_id=1374293200]
+position = Vector2(20, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("10_6kp1y")
+
+[node name="bulletSpawnPoint" type="Node2D" parent="opponent/turret" unique_id=1925930578]
+position = Vector2(51, 0)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opponent" unique_id=186848213]
+shape = SubResource("RectangleShape2D_5rnq1")
+
+[node name="Area2D" type="Area2D" parent="opponent" unique_id=1910080267]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opponent/Area2D" unique_id=28680854]
+shape = SubResource("RectangleShape2D_0uv8d")
+
+[node name="FireRateTimer" type="Timer" parent="opponent" unique_id=2035199727]
+
+[node name="MovementTimer" type="Timer" parent="opponent" unique_id=389464975]
+
+[node name="opponent2" type="CharacterBody2D" parent="." unique_id=1712079803]
+position = Vector2(975, 197)
+script = ExtResource("9_onjd7")
+bullet_scene = ExtResource("10_r82mq")
+
+[node name="body" type="Node2D" parent="opponent2" unique_id=1289298028]
+
+[node name="Sprite2D" type="Sprite2D" parent="opponent2/body" unique_id=926444920]
+position = Vector2(1.9073486e-06, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("9_xxv22")
+
+[node name="turret" type="Node2D" parent="opponent2" unique_id=2132370379]
+
+[node name="Sprite2D" type="Sprite2D" parent="opponent2/turret" unique_id=545386166]
+position = Vector2(20, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("10_6kp1y")
+
+[node name="bulletSpawnPoint" type="Node2D" parent="opponent2/turret" unique_id=791772288]
+position = Vector2(51, 0)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opponent2" unique_id=1433297625]
+shape = SubResource("RectangleShape2D_5rnq1")
+
+[node name="Area2D" type="Area2D" parent="opponent2" unique_id=2042936900]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opponent2/Area2D" unique_id=1371993746]
+shape = SubResource("RectangleShape2D_0uv8d")
+
+[node name="FireRateTimer" type="Timer" parent="opponent2" unique_id=1215655080]
+
+[node name="MovementTimer" type="Timer" parent="opponent2" unique_id=1040570720]
+
+[node name="opponent3" type="CharacterBody2D" parent="." unique_id=595101024]
+position = Vector2(862, 543)
+script = ExtResource("9_onjd7")
+bullet_scene = ExtResource("10_r82mq")
+
+[node name="body" type="Node2D" parent="opponent3" unique_id=70896752]
+
+[node name="Sprite2D" type="Sprite2D" parent="opponent3/body" unique_id=577902495]
+position = Vector2(1.9073486e-06, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("9_xxv22")
+
+[node name="turret" type="Node2D" parent="opponent3" unique_id=488937334]
+
+[node name="Sprite2D" type="Sprite2D" parent="opponent3/turret" unique_id=1342593300]
+position = Vector2(20, 1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("10_6kp1y")
+
+[node name="bulletSpawnPoint" type="Node2D" parent="opponent3/turret" unique_id=1926338554]
+position = Vector2(51, 0)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opponent3" unique_id=534990881]
+shape = SubResource("RectangleShape2D_5rnq1")
+
+[node name="Area2D" type="Area2D" parent="opponent3" unique_id=1358631982]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="opponent3/Area2D" unique_id=983308678]
+shape = SubResource("RectangleShape2D_0uv8d")
+
+[node name="FireRateTimer" type="Timer" parent="opponent3" unique_id=601869666]
+
+[node name="MovementTimer" type="Timer" parent="opponent3" unique_id=1039175170]
+
+[connection signal="pressed" from="inGameUI/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonPlay/ButtonPlay" to="." method="_on_button_play_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="GameOverScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="timeout" from="Player/FireRateTimer" to="Player" method="_on_fire_rate_timer_timeout"]
+[connection signal="area_entered" from="opponent/Area2D" to="opponent" method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="opponent/FireRateTimer" to="opponent" method="_on_fire_rate_timer_timeout"]
+[connection signal="timeout" from="opponent/MovementTimer" to="opponent" method="_on_movement_timer_timeout"]
+[connection signal="area_entered" from="opponent2/Area2D" to="opponent2" method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="opponent2/FireRateTimer" to="opponent2" method="_on_fire_rate_timer_timeout"]
+[connection signal="timeout" from="opponent2/MovementTimer" to="opponent2" method="_on_movement_timer_timeout"]
+[connection signal="area_entered" from="opponent3/Area2D" to="opponent3" method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="opponent3/FireRateTimer" to="opponent3" method="_on_fire_rate_timer_timeout"]
+[connection signal="timeout" from="opponent3/MovementTimer" to="opponent3" method="_on_movement_timer_timeout"]

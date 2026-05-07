@@ -1,0 +1,2277 @@
+[gd_scene format=3 uid="uid://cnh3r77m05vww"]
+
+[ext_resource type="Texture2D" uid="uid://bdt6vlh1s8vhw" path="res://icon.svg" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://hiyk86fx1xpm" path="res://game_components/main_menu/game_button.gd" id="2_sugp2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyhfs"]
+atlas = ExtResource("1_0wfyh")
+
+[sub_resource type="LabelSettings" id="LabelSettings_tbgi4"]
+font_size = 40
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 10
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tefeu"]
+font_size = 80
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 15
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o6xl0"]
+font_size = 32
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 10
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="Main" type="Node2D" unique_id=809401135]
+
+[node name="MainMenu" type="Node2D" parent="." unique_id=211216990]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="MainMenu" unique_id=105731930]
+
+[node name="Control" type="Control" parent="MainMenu/CanvasLayer" unique_id=1437256370]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1357.0
+offset_bottom = 818.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainMenu/CanvasLayer/Control" unique_id=1157901719]
+layout_mode = 0
+offset_left = 38.0
+offset_top = -1.0
+offset_right = 1121.0
+offset_bottom = 649.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/CanvasLayer/Control/ScrollContainer" unique_id=2087561351]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GameButton1" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1874870645]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+game_name = "Fruit Dual"
+game_number = "1"
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1" unique_id=1920043782]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1/bg" unique_id=689264332]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1" unique_id=1834816081]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1" unique_id=1904571337]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1" unique_id=802138080]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1/playButton" unique_id=851333089]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1/playButton/bg" unique_id=1352235068]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1/playButton" unique_id=1627485624]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1/playButton" unique_id=644759640]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton2" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1259221971]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+game_name = "Angle Tanks"
+game_number = "2"
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2" unique_id=1816981038]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2/bg" unique_id=49500979]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2" unique_id=1178506104]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2" unique_id=1218010832]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2" unique_id=40200961]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2/playButton" unique_id=481621391]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2/playButton/bg" unique_id=296187482]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2/playButton" unique_id=547871870]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2/playButton" unique_id=1115641812]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton3" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1137890555]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+game_name = "Balls Game"
+game_number = "3"
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3" unique_id=111734158]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3/bg" unique_id=750857010]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3" unique_id=407148527]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3" unique_id=746644326]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3" unique_id=1991199882]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3/playButton" unique_id=1813643773]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3/playButton/bg" unique_id=253642193]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3/playButton" unique_id=1610161183]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3/playButton" unique_id=1159718944]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton4" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=505093633]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+game_name = "Race Cars"
+game_number = "4"
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4" unique_id=1533381673]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4/bg" unique_id=1488005886]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4" unique_id=238255721]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4" unique_id=2144478495]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4" unique_id=945645298]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4/playButton" unique_id=1746318830]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4/playButton/bg" unique_id=515102366]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4/playButton" unique_id=590734076]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4/playButton" unique_id=1340369548]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton5" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1498935072]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5" unique_id=2029582925]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5/bg" unique_id=1657467604]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5" unique_id=175999543]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5" unique_id=1356653569]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5" unique_id=1875814533]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5/playButton" unique_id=1601834040]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5/playButton/bg" unique_id=1014285118]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5/playButton" unique_id=2099127306]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5/playButton" unique_id=1019490532]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton6" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1438636804]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6" unique_id=2065000127]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6/bg" unique_id=729455197]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6" unique_id=774699555]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6" unique_id=135487561]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6" unique_id=308242278]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6/playButton" unique_id=1667952051]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6/playButton/bg" unique_id=1284162981]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6/playButton" unique_id=1148075072]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6/playButton" unique_id=418061323]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton7" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=326424961]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7" unique_id=1914683107]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7/bg" unique_id=362204480]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7" unique_id=1112927423]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7" unique_id=1450584249]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7" unique_id=493031992]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7/playButton" unique_id=1296982069]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7/playButton/bg" unique_id=499413509]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7/playButton" unique_id=1550953226]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7/playButton" unique_id=424492917]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton8" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1977730507]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8" unique_id=645089196]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8/bg" unique_id=1542277122]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8" unique_id=2116783531]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8" unique_id=577720818]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8" unique_id=789176433]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8/playButton" unique_id=1179815573]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8/playButton/bg" unique_id=1807050971]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8/playButton" unique_id=1986278622]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8/playButton" unique_id=1093697530]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton9" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1268691394]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9" unique_id=12039892]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9/bg" unique_id=2044688815]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9" unique_id=973713243]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9" unique_id=1064906038]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9" unique_id=667342774]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9/playButton" unique_id=1479105364]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9/playButton/bg" unique_id=207275151]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9/playButton" unique_id=676005777]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9/playButton" unique_id=1582072978]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton10" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1576460427]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10" unique_id=489778846]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10/bg" unique_id=402383816]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10" unique_id=887354653]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10" unique_id=1217891523]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10" unique_id=288759213]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10/playButton" unique_id=1329382118]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10/playButton/bg" unique_id=910301459]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10/playButton" unique_id=407621357]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10/playButton" unique_id=570737477]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton11" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=545933501]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11" unique_id=778206104]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11/bg" unique_id=1907609030]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11" unique_id=488338447]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11" unique_id=528579477]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11" unique_id=1093189700]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11/playButton" unique_id=1625232655]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11/playButton/bg" unique_id=1539749033]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11/playButton" unique_id=1921972865]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11/playButton" unique_id=302304908]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton12" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=916688427]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12" unique_id=199118005]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12/bg" unique_id=1752275304]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12" unique_id=950104431]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12" unique_id=343149001]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12" unique_id=759710889]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12/playButton" unique_id=1604123516]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12/playButton/bg" unique_id=1713373213]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12/playButton" unique_id=1381989181]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12/playButton" unique_id=1159766182]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton13" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=566013682]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13" unique_id=913531856]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13/bg" unique_id=626692588]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13" unique_id=163592888]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13" unique_id=1503585404]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13" unique_id=1129979925]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13/playButton" unique_id=659925918]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13/playButton/bg" unique_id=477202022]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13/playButton" unique_id=1272067616]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13/playButton" unique_id=126291238]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton14" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=960795095]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14" unique_id=951171077]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14/bg" unique_id=487667014]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14" unique_id=1779763226]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14" unique_id=1757217331]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14" unique_id=974216275]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14/playButton" unique_id=2052235425]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14/playButton/bg" unique_id=109213299]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14/playButton" unique_id=855079601]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14/playButton" unique_id=998531047]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton15" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=772000172]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15" unique_id=460077182]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15/bg" unique_id=270608767]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15" unique_id=1988596863]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15" unique_id=2017695844]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15" unique_id=423500024]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15/playButton" unique_id=1646028732]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15/playButton/bg" unique_id=1711627074]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15/playButton" unique_id=193987489]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15/playButton" unique_id=1278184897]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton16" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=2115525777]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16" unique_id=2051700147]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16/bg" unique_id=1860943950]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16" unique_id=2146687264]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16" unique_id=1366819366]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16" unique_id=1542856101]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16/playButton" unique_id=1801997441]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16/playButton/bg" unique_id=1150824310]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16/playButton" unique_id=1204232368]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16/playButton" unique_id=345415005]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton17" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=320892765]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17" unique_id=1125225647]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17/bg" unique_id=1447588710]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17" unique_id=191946795]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17" unique_id=1928515568]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17" unique_id=1981444798]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17/playButton" unique_id=1524691403]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17/playButton/bg" unique_id=288386294]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17/playButton" unique_id=18444038]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17/playButton" unique_id=896239833]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton18" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=2139490368]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18" unique_id=226102169]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18/bg" unique_id=1083266716]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18" unique_id=1763523054]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18" unique_id=5044145]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18" unique_id=1288552749]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18/playButton" unique_id=962717028]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18/playButton/bg" unique_id=633484458]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18/playButton" unique_id=894144509]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18/playButton" unique_id=1899695896]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton19" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=154889266]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19" unique_id=1841910581]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19/bg" unique_id=1150656812]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19" unique_id=2112648061]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19" unique_id=2074528524]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19" unique_id=1288439965]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19/playButton" unique_id=459099401]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19/playButton/bg" unique_id=674509324]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19/playButton" unique_id=1660262565]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19/playButton" unique_id=1677129296]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton20" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1404216558]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20" unique_id=73610536]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20/bg" unique_id=102648240]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20" unique_id=1125512977]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20" unique_id=927639070]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20" unique_id=805059520]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20/playButton" unique_id=670946253]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20/playButton/bg" unique_id=400044367]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20/playButton" unique_id=1491228496]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20/playButton" unique_id=349172172]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton21" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1903584994]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21" unique_id=389090825]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21/bg" unique_id=115180529]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21" unique_id=60550688]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21" unique_id=1049075758]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21" unique_id=884165491]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21/playButton" unique_id=1861983800]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21/playButton/bg" unique_id=1795894971]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21/playButton" unique_id=1033785675]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21/playButton" unique_id=1375794379]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton22" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=859439835]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22" unique_id=1397739486]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22/bg" unique_id=1578726344]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22" unique_id=1216364050]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22" unique_id=1458607180]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22" unique_id=231902187]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22/playButton" unique_id=763626276]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22/playButton/bg" unique_id=256424694]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22/playButton" unique_id=658667389]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22/playButton" unique_id=1869036171]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton23" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1899820700]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23" unique_id=44596994]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23/bg" unique_id=1585897266]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23" unique_id=762810311]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23" unique_id=690752958]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23" unique_id=1776222693]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23/playButton" unique_id=1182605209]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23/playButton/bg" unique_id=119869389]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23/playButton" unique_id=1657168853]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23/playButton" unique_id=321255367]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton24" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1642433196]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24" unique_id=29801621]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24/bg" unique_id=247851808]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24" unique_id=300767935]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24" unique_id=1129492720]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24" unique_id=1736376719]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24/playButton" unique_id=498196273]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24/playButton/bg" unique_id=1211741256]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24/playButton" unique_id=812967003]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24/playButton" unique_id=813717954]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton25" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1738709533]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25" unique_id=1776766857]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25/bg" unique_id=1914108987]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25" unique_id=553828371]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25" unique_id=745309597]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25" unique_id=184761309]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25/playButton" unique_id=1863473865]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25/playButton/bg" unique_id=441582164]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25/playButton" unique_id=1699932020]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25/playButton" unique_id=686667413]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton26" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=168631964]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26" unique_id=2093997428]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26/bg" unique_id=1530764577]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26" unique_id=1595179061]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26" unique_id=183536636]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26" unique_id=551310439]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26/playButton" unique_id=1262606774]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26/playButton/bg" unique_id=1590715779]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26/playButton" unique_id=1177668525]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26/playButton" unique_id=1974754720]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton27" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1319981938]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27" unique_id=431251303]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27/bg" unique_id=243370488]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27" unique_id=934380783]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27" unique_id=1404510507]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27" unique_id=134223090]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27/playButton" unique_id=927939165]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27/playButton/bg" unique_id=815240177]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27/playButton" unique_id=1267135994]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27/playButton" unique_id=1064618421]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton28" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1838322575]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28" unique_id=1933107662]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28/bg" unique_id=1832909560]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28" unique_id=897917290]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28" unique_id=1686874575]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28" unique_id=258583693]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28/playButton" unique_id=1622196091]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28/playButton/bg" unique_id=792399567]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28/playButton" unique_id=1049826921]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28/playButton" unique_id=323480336]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton29" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=1244995056]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29" unique_id=1108935506]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29/bg" unique_id=569013388]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29" unique_id=1515771204]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29" unique_id=422645491]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29" unique_id=477674176]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29/playButton" unique_id=507776792]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29/playButton/bg" unique_id=319958582]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29/playButton" unique_id=1974131254]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29/playButton" unique_id=1022431199]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameButton30" type="TextureRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer" unique_id=522851785]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jyhfs")
+script = ExtResource("2_sugp2")
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30" unique_id=1547694622]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 128.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30/bg" unique_id=423080706]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1065.0
+offset_bottom = 119.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="LabelNumber" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30" unique_id=670333664]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.0
+offset_right = 198.0
+offset_bottom = 123.0
+text = "#0"
+label_settings = SubResource("LabelSettings_tbgi4")
+
+[node name="LabelTitle" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30" unique_id=667818642]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 118.0
+text = "Title"
+label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Node2D" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30" unique_id=1437740667]
+
+[node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30/playButton" unique_id=875212293]
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1033.0
+offset_bottom = 95.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30/playButton/bg" unique_id=1378267591]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 165.0
+offset_bottom = 53.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="Label" type="Label" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30/playButton" unique_id=241212955]
+offset_left = 885.0
+offset_top = 40.0
+offset_right = 1015.0
+offset_bottom = 84.0
+text = "Play"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30/playButton" unique_id=1445307143]
+offset_left = 863.0
+offset_top = 34.0
+offset_right = 1033.0
+offset_bottom = 97.0
+theme_type_variation = &"FlatButton"
+
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton1" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton2" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton3" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton4" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29" method="_on_button_play_pressed"]
+[connection signal="pressed" from="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30/playButton/ButtonPlay" to="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30" method="_on_button_play_pressed"]

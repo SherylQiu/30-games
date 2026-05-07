@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cmxlbo2uksltd"]
+
+[ext_resource type="Script" uid="uid://dwlrr2q7m60vj" path="res://game_components/AngleTanksGame/bullet.gd" id="1_3c8dm"]
+[ext_resource type="Texture2D" uid="uid://eyg28loy8g4o" path="res://art/angleTanksGame/Bullets/bulletRed_outline.png" id="2_3c8dm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g06f8"]
+size = Vector2(34, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jokry"]
+size = Vector2(34, 18)
+
+[node name="opponentBullet" type="CharacterBody2D" unique_id=2121192548]
+script = ExtResource("1_3c8dm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=889637180]
+position = Vector2(131, 87)
+rotation = 1.5707964
+texture = ExtResource("2_3c8dm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=585621102]
+position = Vector2(131, 87)
+shape = SubResource("RectangleShape2D_g06f8")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=523751059 groups=["bullet"]]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1747843109]
+position = Vector2(131, 87)
+shape = SubResource("RectangleShape2D_jokry")
+
+[node name="LifetimeTimer" type="Timer" parent="." unique_id=1540720301]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="LifetimeTimer" to="." method="_on_lifetime_timer_timeout"]

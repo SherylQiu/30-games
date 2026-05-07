@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://cmyo2r38jnxrc"]
+
+[ext_resource type="Texture2D" uid="uid://nney7i67g7a8" path="res://art/fruitDualGame/Fruits_Separated/Apple.png" id="1_jyxsr"]
+[ext_resource type="Script" uid="uid://bv7y2v31nc32u" path="res://game_components/fruitDualGame/fruit.gd" id="1_nsn7a"]
+[ext_resource type="Script" uid="uid://bts31c1l4jkk1" path="res://game_components/fruitDualGame/half.gd" id="2_nsn7a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yagk2"]
+size = Vector2(35, 4)
+
+[node name="apple" type="CharacterBody2D" unique_id=488418765]
+script = ExtResource("1_nsn7a")
+
+[node name="wholeSprite" type="Node2D" parent="." unique_id=1008454437]
+
+[node name="Sprite2D" type="Sprite2D" parent="wholeSprite" unique_id=283976682]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="sliceRight" type="Node2D" parent="." unique_id=25262398]
+visible = false
+
+[node name="half1" type="CharacterBody2D" parent="sliceRight" unique_id=1583884837]
+script = ExtResource("2_nsn7a")
+
+[node name="half1" type="ColorRect" parent="sliceRight/half1" unique_id=886300115]
+clip_children = 1
+offset_left = -102.0
+offset_top = -75.0
+offset_right = 97.0
+offset_bottom = 2.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sliceRight/half1/half1" unique_id=1982396982]
+texture_filter = 1
+position = Vector2(102.00001, 77)
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="half2" type="CharacterBody2D" parent="sliceRight" unique_id=154187016]
+script = ExtResource("2_nsn7a")
+
+[node name="half2" type="ColorRect" parent="sliceRight/half2" unique_id=64285829]
+clip_children = 1
+offset_left = -103.0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 78.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sliceRight/half2/half2" unique_id=470957693]
+texture_filter = 1
+position = Vector2(103, -2)
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="sliceDown" type="Node2D" parent="." unique_id=1683041589]
+visible = false
+
+[node name="half1" type="CharacterBody2D" parent="sliceDown" unique_id=1750198364]
+script = ExtResource("2_nsn7a")
+
+[node name="half1" type="ColorRect" parent="sliceDown/half1" unique_id=1949426210]
+clip_children = 1
+offset_top = -100.0
+offset_right = 199.0
+offset_bottom = -23.0
+rotation = 1.5707964
+
+[node name="Sprite2D" type="Sprite2D" parent="sliceDown/half1/half1" unique_id=1653280969]
+texture_filter = 1
+position = Vector2(100.00001, -7.6293945e-06)
+rotation = -1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="half2" type="CharacterBody2D" parent="sliceDown" unique_id=383280469]
+script = ExtResource("2_nsn7a")
+
+[node name="half1" type="ColorRect" parent="sliceDown/half2" unique_id=1744396898]
+clip_children = 1
+offset_left = 76.0
+offset_top = -101.0
+offset_right = 275.0
+offset_bottom = -24.0
+rotation = 1.5707964
+
+[node name="Sprite2D" type="Sprite2D" parent="sliceDown/half2/half1" unique_id=1807455058]
+texture_filter = 1
+position = Vector2(101.00001, 75.99999)
+rotation = -1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="slicedRightSlashed" type="Node2D" parent="." unique_id=294250493]
+visible = false
+
+[node name="half1" type="CharacterBody2D" parent="slicedRightSlashed" unique_id=1097203303]
+script = ExtResource("2_nsn7a")
+
+[node name="half1" type="ColorRect" parent="slicedRightSlashed/half1" unique_id=35464795]
+clip_children = 1
+offset_left = -128.0
+offset_top = 17.999992
+offset_right = 71.0
+offset_bottom = 94.99999
+rotation = -0.7853982
+
+[node name="Sprite2D" type="Sprite2D" parent="slicedRightSlashed/half1/half1" unique_id=1790866865]
+texture_filter = 1
+position = Vector2(102.53049, 78.48887)
+rotation = 0.7853982
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="half2" type="CharacterBody2D" parent="slicedRightSlashed" unique_id=1520997924]
+script = ExtResource("2_nsn7a")
+
+[node name="half1" type="ColorRect" parent="slicedRightSlashed/half2" unique_id=843715931]
+clip_children = 1
+offset_left = -72.00001
+offset_top = 69.00001
+offset_right = 126.99999
+offset_bottom = 146.0
+rotation = -0.7853982
+
+[node name="Sprite2D" type="Sprite2D" parent="slicedRightSlashed/half2/half1" unique_id=835945370]
+texture_filter = 1
+position = Vector2(98.99495, 1.4142075)
+rotation = 0.7853982
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="slicedLeftSlashed" type="Node2D" parent="." unique_id=319696883]
+visible = false
+
+[node name="half1" type="CharacterBody2D" parent="slicedLeftSlashed" unique_id=1825378240]
+script = ExtResource("2_nsn7a")
+
+[node name="half1" type="ColorRect" parent="slicedLeftSlashed/half1" unique_id=1307197544]
+clip_children = 1
+offset_left = -16.0
+offset_top = -123.99999
+offset_right = 183.0
+offset_bottom = -46.999992
+rotation = 0.7853982
+
+[node name="Sprite2D" type="Sprite2D" parent="slicedLeftSlashed/half1/half1" unique_id=1090440015]
+texture_filter = 1
+position = Vector2(98.99495, 76.36752)
+rotation = -0.7853982
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="half2" type="CharacterBody2D" parent="slicedLeftSlashed" unique_id=180448496]
+script = ExtResource("2_nsn7a")
+
+[node name="half1" type="ColorRect" parent="slicedLeftSlashed/half2" unique_id=402376735]
+clip_children = 1
+offset_left = -71.0
+offset_top = -73.00001
+offset_right = 128.0
+offset_bottom = 3.9999924
+rotation = 0.7853982
+
+[node name="Sprite2D" type="Sprite2D" parent="slicedLeftSlashed/half2/half1" unique_id=436649191]
+texture_filter = 1
+position = Vector2(102.53049, 2.1213226)
+rotation = -0.7853982
+scale = Vector2(3, 3)
+texture = ExtResource("1_jyxsr")
+
+[node name="Area2DSide" type="Area2D" parent="." unique_id=920243732]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DSide" unique_id=1717729371]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_yagk2")
+
+[node name="Area2DmMiddle" type="Area2D" parent="." unique_id=1388636257]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DmMiddle" unique_id=643111426]
+position = Vector2(0.5, 0)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_yagk2")
+
+[node name="Area2DmRightS" type="Area2D" parent="." unique_id=1454065472]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DmRightS" unique_id=518491506]
+position = Vector2(0.5, 0)
+rotation = -0.7853982
+shape = SubResource("RectangleShape2D_yagk2")
+
+[node name="Area2DmLeftS" type="Area2D" parent="." unique_id=110294457]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DmLeftS" unique_id=271807118]
+position = Vector2(0.5, 0)
+rotation = 0.7853982
+shape = SubResource("RectangleShape2D_yagk2")
+
+[node name="Timer" type="Timer" parent="." unique_id=1420497588]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="area_entered" from="Area2DSide" to="." method="_on_area_2d_side_area_entered"]
+[connection signal="area_entered" from="Area2DmMiddle" to="." method="_on_area_2_dm_middle_area_entered"]
+[connection signal="area_entered" from="Area2DmRightS" to="." method="_on_area_2_dm_right_s_area_entered"]
+[connection signal="area_entered" from="Area2DmLeftS" to="." method="_on_area_2_dm_left_s_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

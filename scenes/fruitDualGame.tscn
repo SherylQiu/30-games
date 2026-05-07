@@ -1,0 +1,528 @@
+[gd_scene format=3 uid="uid://dh25wjrj0qroo"]
+
+[ext_resource type="Script" uid="uid://wk7igdhfrx2k" path="res://game_components/fruitDualGame/cannons.gd" id="1_m6yww"]
+[ext_resource type="Script" uid="uid://dj61tabuafybi" path="res://game_components/fruitDualGame/main.gd" id="1_q0q7n"]
+[ext_resource type="Texture2D" uid="uid://dn872vu60nkc3" path="res://art/fruitDualGame/Boom.png" id="3_03fab"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywc65"]
+font_size = 35
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y5sdv"]
+radius = 10.198039
+
+[sub_resource type="LabelSettings" id="LabelSettings_q0q7n"]
+font_size = 35
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 10
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="Animation" id="Animation_03fab"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/ColorRect:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control/TextureRect:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.18039216)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Control/ColorRect:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Control/TextureRect:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_636gx"]
+resource_name = "boom"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.1666666, 1.7333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/TextureRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.1333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6666667), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control/ColorRect:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.1333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Control/TextureRect:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Control/ColorRect:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_1pax3"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/ColorRect:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_063t4"]
+_data = {
+&"RESET": SubResource("Animation_03fab"),
+&"boom": SubResource("Animation_636gx"),
+&"idle": SubResource("Animation_1pax3")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_m6yww"]
+font_size = 70
+font_color = Color(0.654902, 0.2784314, 0.07450981, 1)
+outline_size = 5
+outline_color = Color(0.654902, 0.2784314, 0.07450981, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jakv2"]
+font_size = 60
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 12
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g6d6o"]
+font_size = 32
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 7
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r8qk7"]
+font_size = 40
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="fruitDualGame" type="Node2D" unique_id=809401135]
+
+[node name="inGameUI" type="CanvasLayer" parent="." unique_id=130730839]
+
+[node name="ButtonExit" type="Node2D" parent="inGameUI" unique_id=873910341]
+position = Vector2(566, -432)
+
+[node name="ColorRect" type="ColorRect" parent="inGameUI/ButtonExit" unique_id=661578384]
+offset_left = 400.0
+offset_top = 450.0
+offset_right = 560.0
+offset_bottom = 511.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="inGameUI/ButtonExit/ColorRect" unique_id=1669901987]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 153.0
+offset_bottom = 54.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="inGameUI/ButtonExit/ColorRect" unique_id=761365890]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 152.0
+offset_bottom = 54.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_ywc65")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonQuit" type="Button" parent="inGameUI/ButtonExit" unique_id=948008497]
+offset_left = 400.0
+offset_top = 451.0
+offset_right = 560.0
+offset_bottom = 510.0
+theme_type_variation = &"FlatButton"
+
+[node name="main" type="Node2D" parent="." unique_id=1171188014]
+script = ExtResource("1_q0q7n")
+
+[node name="Area2DSlash" type="Area2D" parent="main" unique_id=1814927665 groups=["slash"]]
+position = Vector2(21, 14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="main/Area2DSlash" unique_id=1537261901]
+shape = SubResource("CircleShape2D_y5sdv")
+disabled = true
+
+[node name="cannons" type="Node2D" parent="main" unique_id=1752355602]
+script = ExtResource("1_m6yww")
+
+[node name="connon1" type="Node2D" parent="main/cannons" unique_id=471100959]
+position = Vector2(107, 801)
+
+[node name="connon2" type="Node2D" parent="main/cannons" unique_id=1111128933]
+position = Vector2(384, 744)
+
+[node name="connon3" type="Node2D" parent="main/cannons" unique_id=1050282754]
+position = Vector2(656, 842)
+
+[node name="connon4" type="Node2D" parent="main/cannons" unique_id=795955653]
+position = Vector2(896, 728)
+
+[node name="connon5" type="Node2D" parent="main/cannons" unique_id=2028541827]
+position = Vector2(1099, 810)
+
+[node name="connon6" type="Node2D" parent="main/cannons" unique_id=1584300995]
+position = Vector2(1300, 319)
+
+[node name="connon7" type="Node2D" parent="main/cannons" unique_id=75211800]
+position = Vector2(-142, 396)
+
+[node name="Timer" type="Timer" parent="main/cannons" unique_id=1027532116]
+autostart = true
+
+[node name="Line2D" type="Line2D" parent="main" unique_id=1841125492]
+
+[node name="LabelTime" type="Label" parent="main" unique_id=812106996]
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 141.0
+offset_bottom = 67.0
+text = "Time: 20"
+label_settings = SubResource("LabelSettings_q0q7n")
+vertical_alignment = 1
+
+[node name="TimerGameLength" type="Timer" parent="main" unique_id=729011626]
+wait_time = 20.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="main" unique_id=911059444]
+libraries/ = SubResource("AnimationLibrary_063t4")
+
+[node name="Control" type="Control" parent="main" unique_id=2111993749]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="main/Control" unique_id=485925215]
+visible = false
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 652.0
+
+[node name="LabelBoom" type="Label" parent="main/Control/ColorRect" unique_id=735504571]
+visible = false
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 1154.0
+offset_bottom = 650.0
+text = "Boom!"
+label_settings = SubResource("LabelSettings_m6yww")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="main/Control" unique_id=792287870]
+visible = false
+modulate = Color(1, 1, 1, 0.18039216)
+layout_mode = 0
+offset_left = 247.0
+offset_top = 32.0
+offset_right = 920.0
+offset_bottom = 660.0
+texture = ExtResource("3_03fab")
+
+[node name="StartScreen" type="CanvasLayer" parent="." unique_id=1660502038]
+
+[node name="bg" type="ColorRect" parent="StartScreen" unique_id=52387495]
+offset_left = 318.0
+offset_top = 36.0
+offset_right = 866.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="StartScreen/bg" unique_id=1521908952]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="title" type="Label" parent="StartScreen" unique_id=2052980975]
+offset_left = 354.0
+offset_top = 70.0
+offset_right = 826.0
+offset_bottom = 173.0
+text = "Fruit Dual"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="discribtion" type="Label" parent="StartScreen" unique_id=1204305487]
+offset_left = 348.0
+offset_top = 167.0
+offset_right = 820.0
+offset_bottom = 405.0
+text = "Try to slice as many fruit as you can.
+Be cafeful with the cherry ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧"
+label_settings = SubResource("LabelSettings_g6d6o")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonPlay" type="Node2D" parent="StartScreen" unique_id=1856735167]
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonPlay" unique_id=845858520]
+offset_left = 388.0
+offset_top = 426.0
+offset_right = 565.0
+offset_bottom = 494.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonPlay/ColorRect" unique_id=1539315990]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 170.0
+offset_bottom = 61.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="StartScreen/ButtonPlay/ColorRect" unique_id=386265481]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 171.0
+offset_bottom = 63.0
+text = "Play"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonPlay" type="Button" parent="StartScreen/ButtonPlay" unique_id=740046594]
+offset_left = 387.0
+offset_top = 427.0
+offset_right = 564.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+
+[node name="ButtonExit" type="Node2D" parent="StartScreen" unique_id=675920667]
+position = Vector2(254, 2)
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonExit" unique_id=1549305458]
+offset_left = 374.0
+offset_top = 424.0
+offset_right = 549.0
+offset_bottom = 492.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonExit/ColorRect" unique_id=36930919]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 167.0
+offset_bottom = 62.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="StartScreen/ButtonExit/ColorRect" unique_id=1767106173]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 167.0
+offset_bottom = 64.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonQuit" type="Button" parent="StartScreen/ButtonExit" unique_id=135953368]
+offset_left = 372.0
+offset_top = 425.0
+offset_right = 550.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameOverScreen" type="CanvasLayer" parent="." unique_id=497104716]
+visible = false
+
+[node name="bg" type="ColorRect" parent="GameOverScreen" unique_id=563762937]
+offset_left = 318.0
+offset_top = 36.0
+offset_right = 866.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="GameOverScreen/bg" unique_id=418874055]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="Title" type="Label" parent="GameOverScreen" unique_id=1307171711]
+offset_left = 355.0
+offset_top = 132.0
+offset_right = 827.0
+offset_bottom = 301.0
+text = "Game over
+(｡•́︿•̀｡)"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonExit" type="Node2D" parent="GameOverScreen" unique_id=230578882]
+position = Vector2(128, -54)
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen/ButtonExit" unique_id=176254845]
+offset_left = 375.0
+offset_top = 450.0
+offset_right = 563.0
+offset_bottom = 517.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=688311650]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 181.0
+offset_bottom = 59.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=1551287874]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 182.0
+offset_bottom = 60.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonQuit" type="Button" parent="GameOverScreen/ButtonExit" unique_id=2139376752]
+offset_left = 372.0
+offset_top = 448.0
+offset_right = 564.0
+offset_bottom = 517.0
+theme_type_variation = &"FlatButton"
+
+[connection signal="pressed" from="inGameUI/ButtonExit/ButtonQuit" to="main" method="_on_button_quit_pressed"]
+[connection signal="timeout" from="main/cannons/Timer" to="main/cannons" method="_on_timer_timeout"]
+[connection signal="timeout" from="main/TimerGameLength" to="main" method="_on_timer_game_length_timeout"]
+[connection signal="pressed" from="StartScreen/ButtonPlay/ButtonPlay" to="main" method="_on_button_play_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonExit/ButtonQuit" to="main" method="_on_button_quit_pressed"]
+[connection signal="pressed" from="GameOverScreen/ButtonExit/ButtonQuit" to="main" method="_on_button_quit_pressed"]
