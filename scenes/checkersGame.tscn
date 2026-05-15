@@ -1,0 +1,268 @@
+[gd_scene format=3 uid="uid://c3n7355iqbhme"]
+
+[ext_resource type="Script" uid="uid://bj1dm2nof165u" path="res://game_components/checkersGame/checkers_game.gd" id="1_ap4lu"]
+[ext_resource type="Script" uid="uid://cv30uro3y2qdm" path="res://game_components/checkersGame/board.gd" id="2_176ap"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywc65"]
+font_size = 35
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jakv2"]
+font_size = 60
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 12
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g6d6o"]
+font_size = 30
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 5
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r8qk7"]
+font_size = 40
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="checkersGame" type="Node2D" unique_id=809401135]
+script = ExtResource("1_ap4lu")
+
+[node name="inGameUI" type="CanvasLayer" parent="." unique_id=130730839]
+
+[node name="ButtonExit" type="Node2D" parent="inGameUI" unique_id=873910341]
+position = Vector2(566, -432)
+
+[node name="ColorRect" type="ColorRect" parent="inGameUI/ButtonExit" unique_id=661578384]
+offset_left = 400.0
+offset_top = 450.0
+offset_right = 560.0
+offset_bottom = 511.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="inGameUI/ButtonExit/ColorRect" unique_id=1669901987]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 153.0
+offset_bottom = 54.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="inGameUI/ButtonExit/ColorRect" unique_id=761365890]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 152.0
+offset_bottom = 54.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_ywc65")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="inGameUI/ButtonExit" unique_id=948008497]
+offset_left = 400.0
+offset_top = 451.0
+offset_right = 560.0
+offset_bottom = 510.0
+theme_type_variation = &"FlatButton"
+
+[node name="StartScreen" type="CanvasLayer" parent="." unique_id=1660502038]
+visible = false
+
+[node name="bg" type="ColorRect" parent="StartScreen" unique_id=52387495]
+offset_left = 318.0
+offset_top = 36.0
+offset_right = 866.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="StartScreen/bg" unique_id=1521908952]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="title" type="Label" parent="StartScreen" unique_id=2052980975]
+offset_left = 350.0
+offset_top = 59.0
+offset_right = 822.0
+offset_bottom = 162.0
+text = "Checkers"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="discribtion" type="Label" parent="StartScreen" unique_id=1204305487]
+offset_left = 353.0
+offset_top = 208.0
+offset_right = 825.0
+offset_bottom = 311.0
+text = "Jump over as many pieces as you can to win"
+label_settings = SubResource("LabelSettings_g6d6o")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonPlay" type="Node2D" parent="StartScreen" unique_id=1856735167]
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonPlay" unique_id=845858520]
+offset_left = 388.0
+offset_top = 426.0
+offset_right = 565.0
+offset_bottom = 494.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonPlay/ColorRect" unique_id=1539315990]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 170.0
+offset_bottom = 61.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="StartScreen/ButtonPlay/ColorRect" unique_id=386265481]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 171.0
+offset_bottom = 63.0
+text = "Play"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonPlay" type="Button" parent="StartScreen/ButtonPlay" unique_id=740046594]
+offset_left = 387.0
+offset_top = 427.0
+offset_right = 564.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+
+[node name="ButtonExit" type="Node2D" parent="StartScreen" unique_id=675920667]
+position = Vector2(254, 2)
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonExit" unique_id=1549305458]
+offset_left = 374.0
+offset_top = 424.0
+offset_right = 549.0
+offset_bottom = 492.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonExit/ColorRect" unique_id=36930919]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 167.0
+offset_bottom = 62.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="StartScreen/ButtonExit/ColorRect" unique_id=1767106173]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 167.0
+offset_bottom = 64.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="StartScreen/ButtonExit" unique_id=135953368]
+offset_left = 372.0
+offset_top = 425.0
+offset_right = 550.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+
+[node name="GameOverScreen" type="CanvasLayer" parent="." unique_id=497104716]
+visible = false
+
+[node name="bg" type="ColorRect" parent="GameOverScreen" unique_id=563762937]
+offset_left = 318.0
+offset_top = 36.0
+offset_right = 866.0
+offset_bottom = 575.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="bg2" type="ColorRect" parent="GameOverScreen/bg" unique_id=418874055]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+
+[node name="title" type="Label" parent="GameOverScreen" unique_id=1307171711]
+offset_left = 355.0
+offset_top = 132.0
+offset_right = 827.0
+offset_bottom = 301.0
+text = "Game over
+(｡•́︿•̀｡)"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonExit" type="Node2D" parent="GameOverScreen" unique_id=230578882]
+position = Vector2(128, -54)
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen/ButtonExit" unique_id=176254845]
+offset_left = 375.0
+offset_top = 450.0
+offset_right = 563.0
+offset_bottom = 517.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=688311650]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 181.0
+offset_bottom = 59.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=1551287874]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 182.0
+offset_bottom = 60.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="GameOverScreen/ButtonExit" unique_id=2139376752]
+offset_left = 372.0
+offset_top = 448.0
+offset_right = 564.0
+offset_bottom = 517.0
+theme_type_variation = &"FlatButton"
+
+[node name="board" type="Node2D" parent="." unique_id=189045712]
+script = ExtResource("2_176ap")
+
+[node name="bgBlue" type="ColorRect" parent="board" unique_id=1578813625]
+visible = false
+offset_left = -8.0
+offset_top = -5.0
+offset_right = 1167.0
+offset_bottom = 661.0
+color = Color(0.5686275, 0.68235296, 0.654902, 1)
+
+[node name="bgRed" type="ColorRect" parent="board" unique_id=1058075291]
+visible = false
+offset_left = -8.0
+offset_top = -5.0
+offset_right = 1167.0
+offset_bottom = 661.0
+color = Color(0.8784314, 0.4862745, 0.25882354, 1)
+
+[connection signal="pressed" from="inGameUI/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonPlay/ButtonPlay" to="." method="_on_button_play_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="GameOverScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]

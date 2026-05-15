@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://nobsm2bw6xuk"]
+
+[ext_resource type="Script" uid="uid://ctbt73jhi0knc" path="res://game_components/checkersGame/spot.gd" id="1_fu8ru"]
+[ext_resource type="Texture2D" uid="uid://cdwv4426w1m58" path="res://art/checkersGame/pieceWhite_multi10.png" id="1_yqf5t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu8ru"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="spot" type="ColorRect" unique_id=1861788450]
+offset_right = 60.0
+offset_bottom = 60.0
+color = Color(0.15686275, 0.25490198, 0.22352941, 1)
+script = ExtResource("1_fu8ru")
+
+[node name="player" type="Sprite2D" parent="." unique_id=851531766]
+visible = false
+modulate = Color(0.56790715, 0.6808597, 0.6535304, 1)
+position = Vector2(30, 30.000008)
+scale = Vector2(0.9375, 0.9375)
+texture = ExtResource("1_yqf5t")
+
+[node name="crown" type="Sprite2D" parent="player" unique_id=1113042039]
+modulate = Color(0.627451, 0.7254902, 0.72156864, 1)
+position = Vector2(-3.5762787e-07, -8.761883e-06)
+scale = Vector2(0.7250001, 0.7270834)
+texture = ExtResource("1_yqf5t")
+
+[node name="opponent" type="Sprite2D" parent="." unique_id=455688965]
+modulate = Color(0.8784314, 0.4862745, 0.25882354, 1)
+position = Vector2(30, 30.000008)
+scale = Vector2(0.9375, 0.9375)
+texture = ExtResource("1_yqf5t")
+
+[node name="crown2" type="Sprite2D" parent="opponent" unique_id=2133141382]
+modulate = Color(0.827451, 0.6745098, 0.27450982, 1)
+position = Vector2(0, -1.1444092e-05)
+scale = Vector2(0.7250001, 0.72708344)
+texture = ExtResource("1_yqf5t")
+
+[node name="Button" type="Button" parent="." unique_id=80482314]
+layout_mode = 0
+offset_right = 60.0
+offset_bottom = 60.0
+theme_type_variation = &"FlatButton"
+theme_override_styles/normal = SubResource("StyleBoxFlat_fu8ru")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -10,10 +10,10 @@ func game_over():
 
 func _process(delta: float) -> void:
 	if blue_laps >= 3:
-		$GameOverScreen/title.text = "Blue Wins!"
+		$GameOverScreen/title.text = "Blue Wins!\n⁽⁽٩(๑˃ ᗨ ˂)۶⁾⁾"
 		game_over()
 	elif  red_laps >= 3:
-		$GameOverScreen/title.text = "Red Wins!"
+		$GameOverScreen/title.text = "Red Wins!\n( ´•ω•` )"
 		game_over()
 
 func _on_button_exit_pressed() -> void:
@@ -22,4 +22,4 @@ func _on_button_exit_pressed() -> void:
 
 func _on_button_play_pressed() -> void:
 	game_started = true
-	$StartScreen.visibility = false
+	$StartScreen.visible = false

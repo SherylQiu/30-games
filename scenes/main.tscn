@@ -351,6 +351,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = "UL Tic Tac Toe"
+game_number = "5"
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton5" unique_id=2029582925]
 layout_mode = 0
@@ -424,6 +426,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = "Checkers Game"
+game_number = "6"
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton6" unique_id=2065000127]
 layout_mode = 0
@@ -497,6 +501,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton7" unique_id=1914683107]
 layout_mode = 0
@@ -570,6 +576,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton8" unique_id=645089196]
 layout_mode = 0
@@ -643,6 +651,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton9" unique_id=12039892]
 layout_mode = 0
@@ -716,6 +726,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton10" unique_id=489778846]
 layout_mode = 0
@@ -789,6 +801,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton11" unique_id=778206104]
 layout_mode = 0
@@ -862,6 +876,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton12" unique_id=199118005]
 layout_mode = 0
@@ -935,6 +951,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton13" unique_id=913531856]
 layout_mode = 0
@@ -1008,6 +1026,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton14" unique_id=951171077]
 layout_mode = 0
@@ -1081,6 +1101,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton15" unique_id=460077182]
 layout_mode = 0
@@ -1154,6 +1176,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton16" unique_id=2051700147]
 layout_mode = 0
@@ -1227,6 +1251,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton17" unique_id=1125225647]
 layout_mode = 0
@@ -1300,6 +1326,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton18" unique_id=226102169]
 layout_mode = 0
@@ -1373,6 +1401,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton19" unique_id=1841910581]
 layout_mode = 0
@@ -1446,6 +1476,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton20" unique_id=73610536]
 layout_mode = 0
@@ -1519,6 +1551,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton21" unique_id=389090825]
 layout_mode = 0
@@ -1592,6 +1626,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton22" unique_id=1397739486]
 layout_mode = 0
@@ -1665,6 +1701,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton23" unique_id=44596994]
 layout_mode = 0
@@ -1738,6 +1776,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton24" unique_id=29801621]
 layout_mode = 0
@@ -1811,6 +1851,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton25" unique_id=1776766857]
 layout_mode = 0
@@ -1884,6 +1926,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton26" unique_id=2093997428]
 layout_mode = 0
@@ -1957,6 +2001,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton27" unique_id=431251303]
 layout_mode = 0
@@ -2030,6 +2076,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton28" unique_id=1933107662]
 layout_mode = 0
@@ -2103,6 +2151,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton29" unique_id=1108935506]
 layout_mode = 0
@@ -2176,6 +2226,8 @@ theme_type_variation = &"FlatButton"
 layout_mode = 2
 texture = SubResource("AtlasTexture_jyhfs")
 script = ExtResource("2_sugp2")
+game_name = null
+game_number = null
 
 [node name="bg" type="ColorRect" parent="MainMenu/CanvasLayer/Control/ScrollContainer/VBoxContainer/GameButton30" unique_id=1547694622]
 layout_mode = 0

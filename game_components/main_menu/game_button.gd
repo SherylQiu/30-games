@@ -9,7 +9,8 @@ var fruit_dual = preload("res://scenes/fruitDualGame.tscn")
 var angle_tanks = preload("res://scenes/angelTanksGame.tscn")
 var balls_game = preload("res://scenes/ballsGame.tscn")
 var race_car_game = preload("res://scenes/raceCarGame.tscn")
-
+var tic_tac_game = preload("res://scenes/ULtictactoe.tscn")
+var checkers_game = preload("res://scenes/checkersGame.tscn")
 
 func _ready():
 	$LabelTitle.text = game_name
@@ -27,6 +28,10 @@ func _on_button_play_pressed():
 		picked_game = balls_game.instantiate()
 	if game_name == "Race Cars":
 		picked_game = race_car_game.instantiate()
+	if game_name == "UL Tic Tac Toe":
+		picked_game = tic_tac_game.instantiate()
+	if game_name == "Checkers Game":
+		picked_game = checkers_game.instantiate()
 	$"../../../../../..".add_child(picked_game)
 	picked_game.global_position = Vector2(0,0)
 	$"../../../..".visible = false

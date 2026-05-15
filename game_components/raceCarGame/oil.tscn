@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://3um2c0cg85hc"]
+
+[ext_resource type="Texture2D" uid="uid://c570gnbjxlpxb" path="res://art/raceCarGame/PNG/Objects/oil.png" id="1_f5epl"]
+[ext_resource type="Script" uid="uid://dg4qebctuqg41" path="res://game_components/raceCarGame/oil.gd" id="2_p8fbv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p8fbv"]
+radius = 35.158375
+
+[node name="Oil" type="Sprite2D" unique_id=2051065085 groups=["oil"]]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_f5epl")
+script = ExtResource("2_p8fbv")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=306088639 groups=["oil"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2108740583 groups=["oil"]]
+shape = SubResource("CircleShape2D_p8fbv")
+
+[node name="Timer" type="Timer" parent="." unique_id=2078085595]
+wait_time = 4.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

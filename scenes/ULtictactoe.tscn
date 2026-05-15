@@ -1,0 +1,5766 @@
+[gd_scene format=3 uid="uid://dwbjddfe2xsw2"]
+
+[ext_resource type="Script" uid="uid://c122idbx5vlhj" path="res://game_components/ULtictactoe/button.gd" id="1_82tco"]
+[ext_resource type="Script" uid="uid://bilkjklrcsxe6" path="res://game_components/ULtictactoe/u_ltictactoe.gd" id="1_hhh7f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywc65"]
+font_size = 35
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jakv2"]
+font_size = 60
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 12
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g6d6o"]
+font_size = 30
+font_color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+outline_size = 5
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r8qk7"]
+font_size = 40
+font_color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+outline_size = 8
+outline_color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ULtictactoe" type="Node2D" unique_id=809401135]
+script = ExtResource("1_hhh7f")
+
+[node name="Background" type="ColorRect" parent="." unique_id=893266136]
+offset_left = -6.0
+offset_top = -8.0
+offset_right = 1167.0
+offset_bottom = 667.0
+color = Color(0.19607843, 0.25490198, 0.28627452, 1)
+
+[node name="AreaMark" type="Node2D" parent="." unique_id=652893945]
+
+[node name="AreaMark1" type="ColorRect" parent="AreaMark" unique_id=1388229496]
+visible = false
+offset_left = 306.0
+offset_top = 58.0
+offset_right = 466.0
+offset_bottom = 215.0
+color = Color(0.49371278, 0.6138514, 0.4218198, 1)
+
+[node name="AreaMark2" type="ColorRect" parent="AreaMark" unique_id=1319817412]
+visible = false
+offset_left = 490.0
+offset_top = 58.0
+offset_right = 650.0
+offset_bottom = 215.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="AreaMark3" type="ColorRect" parent="AreaMark" unique_id=821945704]
+visible = false
+offset_left = 675.0
+offset_top = 59.0
+offset_right = 835.0
+offset_bottom = 216.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="AreaMark4" type="ColorRect" parent="AreaMark" unique_id=25476941]
+visible = false
+offset_left = 307.0
+offset_top = 242.0
+offset_right = 467.0
+offset_bottom = 399.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="AreaMark5" type="ColorRect" parent="AreaMark" unique_id=1587846722]
+visible = false
+offset_left = 491.0
+offset_top = 242.0
+offset_right = 651.0
+offset_bottom = 399.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="AreaMark6" type="ColorRect" parent="AreaMark" unique_id=814257855]
+visible = false
+offset_left = 676.0
+offset_top = 242.0
+offset_right = 836.0
+offset_bottom = 399.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="AreaMark7" type="ColorRect" parent="AreaMark" unique_id=13635422]
+visible = false
+offset_left = 307.0
+offset_top = 424.0
+offset_right = 467.0
+offset_bottom = 581.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="AreaMark8" type="ColorRect" parent="AreaMark" unique_id=1883675627]
+visible = false
+offset_left = 491.0
+offset_top = 424.0
+offset_right = 651.0
+offset_bottom = 581.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="AreaMark9" type="ColorRect" parent="AreaMark" unique_id=477954127]
+visible = false
+offset_left = 676.0
+offset_top = 425.0
+offset_right = 836.0
+offset_bottom = 582.0
+color = Color(0.49411765, 0.6156863, 0.42352942, 1)
+
+[node name="inGameUI" type="CanvasLayer" parent="." unique_id=130730839]
+
+[node name="ButtonExit" type="Node2D" parent="inGameUI" unique_id=873910341]
+position = Vector2(566, -432)
+
+[node name="ColorRect" type="ColorRect" parent="inGameUI/ButtonExit" unique_id=661578384]
+offset_left = 400.0
+offset_top = 450.0
+offset_right = 560.0
+offset_bottom = 511.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="inGameUI/ButtonExit/ColorRect" unique_id=1669901987]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 153.0
+offset_bottom = 54.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+
+[node name="title3" type="Label" parent="inGameUI/ButtonExit/ColorRect" unique_id=761365890]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 152.0
+offset_bottom = 54.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_ywc65")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonExit" type="Button" parent="inGameUI/ButtonExit" unique_id=948008497]
+offset_left = 400.0
+offset_top = 451.0
+offset_right = 560.0
+offset_bottom = 510.0
+theme_type_variation = &"FlatButton"
+
+[node name="StartScreen" type="CanvasLayer" parent="." unique_id=1660502038]
+
+[node name="bg" type="ColorRect" parent="StartScreen" unique_id=52387495]
+offset_left = 297.0
+offset_top = 51.0
+offset_right = 845.0
+offset_bottom = 590.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="bg2" type="ColorRect" parent="StartScreen/bg" unique_id=1521908952]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title" type="Label" parent="StartScreen" unique_id=2052980975]
+offset_left = 330.0
+offset_top = 80.0
+offset_right = 802.0
+offset_bottom = 183.0
+text = "UL Tic Tac Toe"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="discribtion" type="Label" parent="StartScreen" unique_id=1204305487]
+offset_left = 328.0
+offset_top = 235.0
+offset_right = 800.0
+offset_bottom = 338.0
+text = "Win as many tic tac toe games until you get a row of wins"
+label_settings = SubResource("LabelSettings_g6d6o")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonPlay" type="Node2D" parent="StartScreen" unique_id=1856735167]
+position = Vector2(-21, 15)
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonPlay" unique_id=845858520]
+offset_left = 388.0
+offset_top = 426.0
+offset_right = 565.0
+offset_bottom = 494.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonPlay/ColorRect" unique_id=1539315990]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 170.0
+offset_bottom = 61.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title3" type="Label" parent="StartScreen/ButtonPlay/ColorRect" unique_id=386265481]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 171.0
+offset_bottom = 63.0
+text = "Play"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonPlay" type="Button" parent="StartScreen/ButtonPlay" unique_id=740046594]
+offset_left = 387.0
+offset_top = 427.0
+offset_right = 564.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Node2D" parent="StartScreen" unique_id=675920667]
+position = Vector2(233, 17)
+
+[node name="ColorRect" type="ColorRect" parent="StartScreen/ButtonExit" unique_id=1549305458]
+offset_left = 374.0
+offset_top = 424.0
+offset_right = 549.0
+offset_bottom = 492.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="StartScreen/ButtonExit/ColorRect" unique_id=36930919]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 167.0
+offset_bottom = 62.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title3" type="Label" parent="StartScreen/ButtonExit/ColorRect" unique_id=1767106173]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 167.0
+offset_bottom = 64.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Button" parent="StartScreen/ButtonExit" unique_id=135953368]
+offset_left = 372.0
+offset_top = 425.0
+offset_right = 550.0
+offset_bottom = 495.0
+theme_type_variation = &"FlatButton"
+metadata/_edit_use_anchors_ = true
+
+[node name="GameOverScreen" type="CanvasLayer" parent="." unique_id=497104716]
+visible = false
+
+[node name="bg" type="ColorRect" parent="GameOverScreen" unique_id=563762937]
+offset_left = 295.0
+offset_top = 59.0
+offset_right = 843.0
+offset_bottom = 598.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="bg2" type="ColorRect" parent="GameOverScreen/bg" unique_id=418874055]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 536.0
+offset_bottom = 526.0
+color = Color(0.9137255, 0.83137256, 0.6862745, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title" type="Label" parent="GameOverScreen" unique_id=1307171711]
+offset_left = 332.0
+offset_top = 155.0
+offset_right = 804.0
+offset_bottom = 324.0
+text = "Game over
+(｡•́︿•̀｡)"
+label_settings = SubResource("LabelSettings_jakv2")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Node2D" parent="GameOverScreen" unique_id=230578882]
+position = Vector2(105, -31)
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen/ButtonExit" unique_id=176254845]
+offset_left = 375.0
+offset_top = 450.0
+offset_right = 563.0
+offset_bottom = 517.0
+color = Color(0.26666668, 0.16862746, 0.08235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=688311650]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 181.0
+offset_bottom = 59.0
+color = Color(0.8666667, 0.60784316, 0.29411766, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="title3" type="Label" parent="GameOverScreen/ButtonExit/ColorRect" unique_id=1551287874]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 182.0
+offset_bottom = 60.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_r8qk7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Button" parent="GameOverScreen/ButtonExit" unique_id=2139376752]
+offset_left = 372.0
+offset_top = 448.0
+offset_right = 564.0
+offset_bottom = 517.0
+theme_type_variation = &"FlatButton"
+metadata/_edit_use_anchors_ = true
+
+[node name="board" type="Node2D" parent="." unique_id=1540931221]
+position = Vector2(-47.999992, -44)
+scale = Vector2(1.1, 1.1)
+
+[node name="topLeft" type="Node2D" parent="board" unique_id=2086150596]
+position = Vector2(328, 98)
+
+[node name="Button" type="Button" parent="board/topLeft" unique_id=1134591831]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button" unique_id=1638541013]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button/shapeO" unique_id=1831487435]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button/shapeO" unique_id=340154856]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button/shapeO" unique_id=1560038774]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button" unique_id=853881797]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button/shapeX" unique_id=2124766957]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/topLeft" unique_id=1834674784]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button2" unique_id=421747986]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button2/shapeO" unique_id=599371376]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button2/shapeO" unique_id=1176861629]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button2/shapeO" unique_id=1062761149]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button2" unique_id=1588787669]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button2/shapeX" unique_id=453697593]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/topLeft" unique_id=440987911]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button3" unique_id=1285766665]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button3/shapeO" unique_id=1139128887]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button3/shapeO" unique_id=1492777655]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button3/shapeO" unique_id=52450957]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button3" unique_id=2056265864]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button3/shapeX" unique_id=552605673]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/topLeft" unique_id=1344400516]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button4" unique_id=1362256873]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button4/shapeO" unique_id=1517029779]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button4/shapeO" unique_id=926507315]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button4/shapeO" unique_id=1091941774]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button4" unique_id=811697389]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button4/shapeX" unique_id=112589537]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/topLeft" unique_id=333648498]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button5" unique_id=1440760263]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button5/shapeO" unique_id=595437987]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button5/shapeO" unique_id=563302003]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button5/shapeO" unique_id=1168170892]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button5" unique_id=1526325638]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button5/shapeX" unique_id=1012110746]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/topLeft" unique_id=496123990]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button6" unique_id=510523790]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button6/shapeO" unique_id=1967139944]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button6/shapeO" unique_id=6229039]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button6/shapeO" unique_id=1549634346]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button6" unique_id=786104384]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button6/shapeX" unique_id=1239138214]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/topLeft" unique_id=339912318]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button7" unique_id=1215902979]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button7/shapeO" unique_id=1600509837]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button7/shapeO" unique_id=2057428344]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button7/shapeO" unique_id=1213889085]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button7" unique_id=430811443]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button7/shapeX" unique_id=1367123634]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/topLeft" unique_id=168617283]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button8" unique_id=1848821796]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button8/shapeO" unique_id=2085577394]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button8/shapeO" unique_id=1351820067]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button8/shapeO" unique_id=1721626190]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button8" unique_id=1991683312]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button8/shapeX" unique_id=582167780]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/topLeft" unique_id=1033507519]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topLeft/Button9" unique_id=699542828]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topLeft/Button9/shapeO" unique_id=1823537821]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topLeft/Button9/shapeO" unique_id=754873192]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topLeft/Button9/shapeO" unique_id=814586950]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topLeft/Button9" unique_id=179590101]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topLeft/Button9/shapeX" unique_id=528898796]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/topLeft" unique_id=894889036 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/topLeft" unique_id=1210283300 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/topLeft" unique_id=2006967759 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/topLeft" unique_id=1653241318 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="topMiddle" type="Node2D" parent="board" unique_id=1770894569]
+position = Vector2(496.36362, 98.181816)
+
+[node name="Button" type="Button" parent="board/topMiddle" unique_id=1129316825]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button" unique_id=1531331419]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button/shapeO" unique_id=1969236876]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button/shapeO" unique_id=1404150363]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button/shapeO" unique_id=2133453887]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button" unique_id=1323425405]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button/shapeX" unique_id=131600007]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/topMiddle" unique_id=633268136]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button2" unique_id=1968063018]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button2/shapeO" unique_id=2051876776]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button2/shapeO" unique_id=2050303238]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button2/shapeO" unique_id=73256937]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button2" unique_id=2082414209]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button2/shapeX" unique_id=1665949658]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/topMiddle" unique_id=2056497484]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button3" unique_id=588375281]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button3/shapeO" unique_id=2129387963]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button3/shapeO" unique_id=1297741894]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button3/shapeO" unique_id=811560786]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button3" unique_id=1847362922]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button3/shapeX" unique_id=826679351]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/topMiddle" unique_id=446643369]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button4" unique_id=2088208733]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button4/shapeO" unique_id=1736821095]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button4/shapeO" unique_id=73126201]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button4/shapeO" unique_id=1606700298]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button4" unique_id=220575444]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button4/shapeX" unique_id=1169141895]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/topMiddle" unique_id=551952181]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button5" unique_id=1532266736]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button5/shapeO" unique_id=1739633585]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button5/shapeO" unique_id=1862191831]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button5/shapeO" unique_id=1733348811]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button5" unique_id=48563275]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button5/shapeX" unique_id=1176609781]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/topMiddle" unique_id=2006790420]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button6" unique_id=1719462561]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button6/shapeO" unique_id=989084462]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button6/shapeO" unique_id=697729387]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button6/shapeO" unique_id=972042034]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button6" unique_id=1746599459]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button6/shapeX" unique_id=1633128297]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/topMiddle" unique_id=1823677056]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button7" unique_id=457919031]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button7/shapeO" unique_id=497491987]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button7/shapeO" unique_id=1490741304]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button7/shapeO" unique_id=1289460073]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button7" unique_id=1600153860]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button7/shapeX" unique_id=1194267100]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/topMiddle" unique_id=348888577]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button8" unique_id=723069447]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button8/shapeO" unique_id=954737675]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button8/shapeO" unique_id=2030574665]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button8/shapeO" unique_id=137746478]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button8" unique_id=990238420]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button8/shapeX" unique_id=802909481]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/topMiddle" unique_id=1807369078]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_column = 1
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topMiddle/Button9" unique_id=399998595]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topMiddle/Button9/shapeO" unique_id=766008099]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topMiddle/Button9/shapeO" unique_id=248299843]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topMiddle/Button9/shapeO" unique_id=2102489865]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topMiddle/Button9" unique_id=2053524224]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topMiddle/Button9/shapeX" unique_id=975117379]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/topMiddle" unique_id=478238935 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/topMiddle" unique_id=1644387826 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/topMiddle" unique_id=110534265 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/topMiddle" unique_id=1385346944 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="topRight" type="Node2D" parent="board" unique_id=1645281072]
+position = Vector2(664.5454, 98.181816)
+
+[node name="Button" type="Button" parent="board/topRight" unique_id=1346500245]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button" unique_id=1725007563]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button/shapeO" unique_id=1666807178]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button/shapeO" unique_id=502191867]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button/shapeO" unique_id=1828544614]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button" unique_id=1761622284]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button/shapeX" unique_id=758497370]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/topRight" unique_id=1864566555]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button2" unique_id=1213930202]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button2/shapeO" unique_id=435955678]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button2/shapeO" unique_id=2058759232]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button2/shapeO" unique_id=110917899]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button2" unique_id=320246602]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button2/shapeX" unique_id=307458687]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/topRight" unique_id=1297098589]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button3" unique_id=1991414195]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button3/shapeO" unique_id=1673762524]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button3/shapeO" unique_id=1924974756]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button3/shapeO" unique_id=669585858]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button3" unique_id=860001076]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button3/shapeX" unique_id=1641735409]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/topRight" unique_id=709575660]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button4" unique_id=576587794]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button4/shapeO" unique_id=641572559]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button4/shapeO" unique_id=109794013]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button4/shapeO" unique_id=1233343243]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button4" unique_id=1832702603]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button4/shapeX" unique_id=1327426448]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/topRight" unique_id=329584473]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button5" unique_id=1549749677]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button5/shapeO" unique_id=966673007]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button5/shapeO" unique_id=812142831]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button5/shapeO" unique_id=1395078710]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button5" unique_id=1005246359]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button5/shapeX" unique_id=898058224]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/topRight" unique_id=201381870]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button6" unique_id=1070965745]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button6/shapeO" unique_id=427140328]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button6/shapeO" unique_id=1431684416]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button6/shapeO" unique_id=1972499103]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button6" unique_id=1269977247]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button6/shapeX" unique_id=1242089913]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/topRight" unique_id=1055680640]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button7" unique_id=2001972451]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button7/shapeO" unique_id=534419374]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button7/shapeO" unique_id=348162274]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button7/shapeO" unique_id=1958528191]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button7" unique_id=944976173]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button7/shapeX" unique_id=1345316466]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/topRight" unique_id=663468435]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button8" unique_id=499868056]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button8/shapeO" unique_id=449918958]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button8/shapeO" unique_id=1831943967]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button8/shapeO" unique_id=1564399115]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button8" unique_id=2050464805]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button8/shapeX" unique_id=1191876445]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/topRight" unique_id=899024236]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_column = 2
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/topRight/Button9" unique_id=1470324815]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/topRight/Button9/shapeO" unique_id=1938994043]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/topRight/Button9/shapeO" unique_id=2087460368]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/topRight/Button9/shapeO" unique_id=2113772777]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/topRight/Button9" unique_id=698392209]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/topRight/Button9/shapeX" unique_id=146317065]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/topRight" unique_id=1109888578 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/topRight" unique_id=589389762 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/topRight" unique_id=163850505 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/topRight" unique_id=2115415694 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="middleLeft" type="Node2D" parent="board" unique_id=2125082549]
+position = Vector2(327.2727, 265.45453)
+
+[node name="Button" type="Button" parent="board/middleLeft" unique_id=1222953598]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button" unique_id=926405083]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button/shapeO" unique_id=343526942]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button/shapeO" unique_id=1583513904]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button/shapeO" unique_id=478273381]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button" unique_id=723259377]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button/shapeX" unique_id=1276492756]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/middleLeft" unique_id=1539084380]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button2" unique_id=1103632158]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button2/shapeO" unique_id=1208335168]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button2/shapeO" unique_id=527761424]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button2/shapeO" unique_id=1731742428]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button2" unique_id=1776284076]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button2/shapeX" unique_id=1537924141]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/middleLeft" unique_id=16847111]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button3" unique_id=713862681]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button3/shapeO" unique_id=1612048613]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button3/shapeO" unique_id=979398124]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button3/shapeO" unique_id=1138341285]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button3" unique_id=1181248333]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button3/shapeX" unique_id=1949804762]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/middleLeft" unique_id=1257485240]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button4" unique_id=1296700270]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button4/shapeO" unique_id=1254841309]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button4/shapeO" unique_id=1831624190]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button4/shapeO" unique_id=1413728695]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button4" unique_id=1040399468]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button4/shapeX" unique_id=94864296]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/middleLeft" unique_id=909637967]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button5" unique_id=2099247657]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button5/shapeO" unique_id=303622630]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button5/shapeO" unique_id=1260340797]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button5/shapeO" unique_id=560558205]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button5" unique_id=634071459]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button5/shapeX" unique_id=865295671]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/middleLeft" unique_id=287536483]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button6" unique_id=1142021111]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button6/shapeO" unique_id=1650277189]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button6/shapeO" unique_id=722071977]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button6/shapeO" unique_id=163591241]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button6" unique_id=848264878]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button6/shapeX" unique_id=1968246924]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/middleLeft" unique_id=1076763448]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button7" unique_id=1834977164]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button7/shapeO" unique_id=1777341934]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button7/shapeO" unique_id=1442175914]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button7/shapeO" unique_id=1459347575]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button7" unique_id=893036493]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button7/shapeX" unique_id=2138110295]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/middleLeft" unique_id=1361360606]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button8" unique_id=1693563587]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button8/shapeO" unique_id=1939325264]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button8/shapeO" unique_id=759506224]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button8/shapeO" unique_id=1840001300]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button8" unique_id=1989491749]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button8/shapeX" unique_id=1683433503]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/middleLeft" unique_id=1312741166]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleLeft/Button9" unique_id=696036473]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleLeft/Button9/shapeO" unique_id=197110153]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleLeft/Button9/shapeO" unique_id=869840517]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleLeft/Button9/shapeO" unique_id=1266459187]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleLeft/Button9" unique_id=572102710]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleLeft/Button9/shapeX" unique_id=951806767]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/middleLeft" unique_id=2137211165 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/middleLeft" unique_id=157954485 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/middleLeft" unique_id=58417543 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/middleLeft" unique_id=51870405 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="middleMiddle" type="Node2D" parent="board" unique_id=2095657330]
+position = Vector2(495.63632, 265.63635)
+
+[node name="Button" type="Button" parent="board/middleMiddle" unique_id=1466042826]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button" unique_id=232615745]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button/shapeO" unique_id=377035836]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button/shapeO" unique_id=1351930369]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button/shapeO" unique_id=912148584]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button" unique_id=285591268]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button/shapeX" unique_id=1554328763]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/middleMiddle" unique_id=2099176940]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button2" unique_id=1556261741]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button2/shapeO" unique_id=132327385]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button2/shapeO" unique_id=102063068]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button2/shapeO" unique_id=1251260040]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button2" unique_id=1101256335]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button2/shapeX" unique_id=1959046494]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/middleMiddle" unique_id=296582033]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button3" unique_id=1801853165]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button3/shapeO" unique_id=634376710]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button3/shapeO" unique_id=1208079766]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button3/shapeO" unique_id=1252704588]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button3" unique_id=1668598244]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button3/shapeX" unique_id=400398062]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/middleMiddle" unique_id=1770686305]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button4" unique_id=1155025431]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button4/shapeO" unique_id=1608758916]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button4/shapeO" unique_id=771717540]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button4/shapeO" unique_id=387265771]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button4" unique_id=1886112261]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button4/shapeX" unique_id=1696155093]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/middleMiddle" unique_id=560000536]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button5" unique_id=276437402]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button5/shapeO" unique_id=269957123]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button5/shapeO" unique_id=2101804220]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button5/shapeO" unique_id=1880516292]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button5" unique_id=2093880485]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button5/shapeX" unique_id=446728244]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/middleMiddle" unique_id=1827135598]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button6" unique_id=1254136291]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button6/shapeO" unique_id=1786599427]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button6/shapeO" unique_id=251367597]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button6/shapeO" unique_id=140554466]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button6" unique_id=1022012529]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button6/shapeX" unique_id=1678910628]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/middleMiddle" unique_id=1684256877]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button7" unique_id=786322317]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button7/shapeO" unique_id=246499620]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button7/shapeO" unique_id=1096173990]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button7/shapeO" unique_id=1952389188]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button7" unique_id=866381277]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button7/shapeX" unique_id=1484263982]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/middleMiddle" unique_id=838233241]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button8" unique_id=1695267988]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button8/shapeO" unique_id=1009441530]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button8/shapeO" unique_id=5845921]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button8/shapeO" unique_id=1174495459]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button8" unique_id=1847077174]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button8/shapeX" unique_id=1451928865]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/middleMiddle" unique_id=603259203]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 1
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleMiddle/Button9" unique_id=1109370142]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleMiddle/Button9/shapeO" unique_id=337165810]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleMiddle/Button9/shapeO" unique_id=793656665]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleMiddle/Button9/shapeO" unique_id=267238924]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleMiddle/Button9" unique_id=841035247]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleMiddle/Button9/shapeX" unique_id=1459604349]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/middleMiddle" unique_id=1272345335 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/middleMiddle" unique_id=616277153 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/middleMiddle" unique_id=1028479308 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/middleMiddle" unique_id=950514555 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="middleRight" type="Node2D" parent="board" unique_id=768799750]
+position = Vector2(663.8181, 265.63635)
+
+[node name="Button" type="Button" parent="board/middleRight" unique_id=1264544627]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button" unique_id=787110023]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button/shapeO" unique_id=604817988]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button/shapeO" unique_id=131092185]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button/shapeO" unique_id=560192836]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button" unique_id=210887852]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button/shapeX" unique_id=1892052710]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/middleRight" unique_id=1523792889]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button2" unique_id=925037303]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button2/shapeO" unique_id=1550552025]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button2/shapeO" unique_id=1563358415]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button2/shapeO" unique_id=1650019350]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button2" unique_id=1055447347]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button2/shapeX" unique_id=1030478112]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/middleRight" unique_id=1829608029]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button3" unique_id=1913687450]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button3/shapeO" unique_id=1065243939]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button3/shapeO" unique_id=177202479]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button3/shapeO" unique_id=519712238]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button3" unique_id=752585861]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button3/shapeX" unique_id=1327188538]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/middleRight" unique_id=716046257]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button4" unique_id=808814793]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button4/shapeO" unique_id=1862292087]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button4/shapeO" unique_id=100596874]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button4/shapeO" unique_id=417118462]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button4" unique_id=1468904170]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button4/shapeX" unique_id=1618265509]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/middleRight" unique_id=835046143]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button5" unique_id=745614583]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button5/shapeO" unique_id=970784203]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button5/shapeO" unique_id=815462880]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button5/shapeO" unique_id=2025677252]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button5" unique_id=1398677927]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button5/shapeX" unique_id=1589774248]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/middleRight" unique_id=868524111]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button6" unique_id=1825369841]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button6/shapeO" unique_id=783848395]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button6/shapeO" unique_id=1243381057]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button6/shapeO" unique_id=2048204747]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button6" unique_id=1071392542]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button6/shapeX" unique_id=2113065107]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/middleRight" unique_id=1428195514]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button7" unique_id=1979830761]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button7/shapeO" unique_id=607077437]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button7/shapeO" unique_id=473287181]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button7/shapeO" unique_id=648730916]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button7" unique_id=1484186410]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button7/shapeX" unique_id=1842266680]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/middleRight" unique_id=1080329208]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button8" unique_id=1871904513]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button8/shapeO" unique_id=1644556771]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button8/shapeO" unique_id=265640954]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button8/shapeO" unique_id=2142744058]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button8" unique_id=385852712]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button8/shapeX" unique_id=1093048913]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/middleRight" unique_id=1410743255]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 1
+board_column = 2
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/middleRight/Button9" unique_id=1994697242]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/middleRight/Button9/shapeO" unique_id=2052837704]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/middleRight/Button9/shapeO" unique_id=1291567594]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/middleRight/Button9/shapeO" unique_id=1291951350]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/middleRight/Button9" unique_id=669759611]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/middleRight/Button9/shapeX" unique_id=334054130]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/middleRight" unique_id=1637962117 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/middleRight" unique_id=406844744 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/middleRight" unique_id=267627907 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/middleRight" unique_id=1868403345 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="bottomLeft" type="Node2D" parent="board" unique_id=2143181373]
+position = Vector2(327.27274, 431.81818)
+
+[node name="Button" type="Button" parent="board/bottomLeft" unique_id=1582513782]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button" unique_id=1588317779]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button/shapeO" unique_id=358980505]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button/shapeO" unique_id=549741938]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button/shapeO" unique_id=1121906751]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button" unique_id=317360557]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button/shapeX" unique_id=584323683]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/bottomLeft" unique_id=358728777]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button2" unique_id=927538846]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button2/shapeO" unique_id=1148540829]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button2/shapeO" unique_id=1017397763]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button2/shapeO" unique_id=700802471]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button2" unique_id=1127340597]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button2/shapeX" unique_id=1130479189]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/bottomLeft" unique_id=201257204]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button3" unique_id=1598492181]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button3/shapeO" unique_id=1700511126]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button3/shapeO" unique_id=1148754542]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button3/shapeO" unique_id=630507471]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button3" unique_id=2084484789]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button3/shapeX" unique_id=1823086575]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/bottomLeft" unique_id=1283411217]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button4" unique_id=5581770]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button4/shapeO" unique_id=794510435]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button4/shapeO" unique_id=893502431]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button4/shapeO" unique_id=465046859]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button4" unique_id=1760154072]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button4/shapeX" unique_id=1472355496]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/bottomLeft" unique_id=549648521]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button5" unique_id=365144038]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button5/shapeO" unique_id=1025774630]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button5/shapeO" unique_id=2013356705]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button5/shapeO" unique_id=342938776]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button5" unique_id=921788035]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button5/shapeX" unique_id=1103665929]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/bottomLeft" unique_id=2017952696]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button6" unique_id=1460115812]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button6/shapeO" unique_id=658110659]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button6/shapeO" unique_id=843616284]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button6/shapeO" unique_id=322814499]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button6" unique_id=2044924106]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button6/shapeX" unique_id=1474646354]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/bottomLeft" unique_id=1253523091]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button7" unique_id=1708589407]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button7/shapeO" unique_id=702922119]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button7/shapeO" unique_id=238701187]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button7/shapeO" unique_id=487681964]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button7" unique_id=145414577]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button7/shapeX" unique_id=1408634766]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/bottomLeft" unique_id=1125789874]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button8" unique_id=1131283240]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button8/shapeO" unique_id=1665378991]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button8/shapeO" unique_id=718055125]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button8/shapeO" unique_id=1000269195]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button8" unique_id=14623042]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button8/shapeX" unique_id=146005581]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/bottomLeft" unique_id=2021184440]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomLeft/Button9" unique_id=100372542]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomLeft/Button9/shapeO" unique_id=1801907581]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomLeft/Button9/shapeO" unique_id=202542272]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomLeft/Button9/shapeO" unique_id=1506138316]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomLeft/Button9" unique_id=1846794607]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomLeft/Button9/shapeX" unique_id=1508641284]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/bottomLeft" unique_id=419335518 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/bottomLeft" unique_id=845295777 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/bottomLeft" unique_id=649744163 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/bottomLeft" unique_id=2093117850 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="bottomMiddle" type="Node2D" parent="board" unique_id=1277507935]
+position = Vector2(495.63635, 432)
+
+[node name="Button" type="Button" parent="board/bottomMiddle" unique_id=2109637168]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button" unique_id=1400382080]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button/shapeO" unique_id=573358122]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button/shapeO" unique_id=862864619]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button/shapeO" unique_id=715492980]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button" unique_id=1036914712]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button/shapeX" unique_id=1662736288]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/bottomMiddle" unique_id=700761880]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button2" unique_id=164847218]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button2/shapeO" unique_id=1571789001]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button2/shapeO" unique_id=1965528135]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button2/shapeO" unique_id=2017675819]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button2" unique_id=1431750750]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button2/shapeX" unique_id=1127123590]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/bottomMiddle" unique_id=659452609]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button3" unique_id=184464699]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button3/shapeO" unique_id=2125128772]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button3/shapeO" unique_id=347904690]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button3/shapeO" unique_id=1373051244]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button3" unique_id=721711598]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button3/shapeX" unique_id=1479875950]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/bottomMiddle" unique_id=2071870817]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button4" unique_id=464487643]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button4/shapeO" unique_id=323572464]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button4/shapeO" unique_id=1022170474]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button4/shapeO" unique_id=1317106303]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button4" unique_id=366197868]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button4/shapeX" unique_id=724830226]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/bottomMiddle" unique_id=1657960698]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button5" unique_id=336165286]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button5/shapeO" unique_id=1107684997]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button5/shapeO" unique_id=1621971421]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button5/shapeO" unique_id=1803711148]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button5" unique_id=1082172670]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button5/shapeX" unique_id=1389877751]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/bottomMiddle" unique_id=1251297592]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button6" unique_id=79766086]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button6/shapeO" unique_id=1306378742]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button6/shapeO" unique_id=342049869]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button6/shapeO" unique_id=1382423617]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button6" unique_id=396297300]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button6/shapeX" unique_id=288193649]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/bottomMiddle" unique_id=1803630749]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button7" unique_id=1465817963]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button7/shapeO" unique_id=2036879781]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button7/shapeO" unique_id=1074830790]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button7/shapeO" unique_id=278856300]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button7" unique_id=1466238660]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button7/shapeX" unique_id=129925633]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/bottomMiddle" unique_id=1530246242]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button8" unique_id=1294902160]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button8/shapeO" unique_id=1078567878]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button8/shapeO" unique_id=696544836]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button8/shapeO" unique_id=299199983]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button8" unique_id=394530694]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button8/shapeX" unique_id=1766408073]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/bottomMiddle" unique_id=2056705136]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 1
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomMiddle/Button9" unique_id=251649055]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomMiddle/Button9/shapeO" unique_id=91217470]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomMiddle/Button9/shapeO" unique_id=1488471615]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomMiddle/Button9/shapeO" unique_id=526610239]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomMiddle/Button9" unique_id=325745216]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomMiddle/Button9/shapeX" unique_id=1323023829]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/bottomMiddle" unique_id=2125377491 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/bottomMiddle" unique_id=1107817981 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/bottomMiddle" unique_id=759128403 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/bottomMiddle" unique_id=1341753108 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="bottomRight" type="Node2D" parent="board" unique_id=600297702]
+position = Vector2(663.8181, 432)
+
+[node name="Button" type="Button" parent="board/bottomRight" unique_id=1811669856]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button" unique_id=244142321]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button/shapeO" unique_id=765082695]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button/shapeO" unique_id=288047044]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button/shapeO" unique_id=1488383440]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button" unique_id=2062447120]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button/shapeX" unique_id=902560333]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button2" type="Button" parent="board/bottomRight" unique_id=355868777]
+offset_left = 46.0
+offset_right = 86.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button2" unique_id=1027128686]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button2/shapeO" unique_id=1284426687]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button2/shapeO" unique_id=1925660867]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button2/shapeO" unique_id=948308914]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button2" unique_id=666974032]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button2/shapeX" unique_id=224297451]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button3" type="Button" parent="board/bottomRight" unique_id=556868204]
+offset_left = 92.0
+offset_right = 132.0
+offset_bottom = 40.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button3" unique_id=1149600004]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button3/shapeO" unique_id=1955602110]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button3/shapeO" unique_id=1032726694]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button3/shapeO" unique_id=433926306]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button3" unique_id=1996358033]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button3/shapeX" unique_id=1014197291]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button4" type="Button" parent="board/bottomRight" unique_id=1888982707]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_row = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button4" unique_id=1392646337]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button4/shapeO" unique_id=1984572591]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button4/shapeO" unique_id=777150822]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button4/shapeO" unique_id=1118015304]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button4" unique_id=956319646]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button4/shapeX" unique_id=1682981401]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button5" type="Button" parent="board/bottomRight" unique_id=1660985557]
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 86.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_row = 1
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button5" unique_id=1090608991]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button5/shapeO" unique_id=124464070]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button5/shapeO" unique_id=1332418550]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button5/shapeO" unique_id=2050297786]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button5" unique_id=1185083870]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button5/shapeX" unique_id=1805635240]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button6" type="Button" parent="board/bottomRight" unique_id=1279319504]
+offset_left = 92.0
+offset_top = 46.0
+offset_right = 132.0
+offset_bottom = 86.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_row = 1
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button6" unique_id=99948822]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button6/shapeO" unique_id=823709713]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button6/shapeO" unique_id=1448923090]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button6/shapeO" unique_id=2051265225]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button6" unique_id=51845682]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button6/shapeX" unique_id=1172419929]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button7" type="Button" parent="board/bottomRight" unique_id=622508165]
+offset_top = 92.0
+offset_right = 40.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_row = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button7" unique_id=1889372711]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button7/shapeO" unique_id=1168108820]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button7/shapeO" unique_id=1158467554]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button7/shapeO" unique_id=745251669]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button7" unique_id=382378125]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button7/shapeX" unique_id=553419916]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button8" type="Button" parent="board/bottomRight" unique_id=1781118296]
+offset_left = 46.0
+offset_top = 92.0
+offset_right = 86.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_row = 2
+spot_column = 1
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button8" unique_id=689580344]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button8/shapeO" unique_id=75625581]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button8/shapeO" unique_id=1851979335]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button8/shapeO" unique_id=21478216]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button8" unique_id=1320967009]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button8/shapeX" unique_id=1677642345]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Button9" type="Button" parent="board/bottomRight" unique_id=707826179]
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 132.0
+script = ExtResource("1_82tco")
+board_row = 2
+board_column = 2
+spot_row = 2
+spot_column = 2
+
+[node name="shapeO" type="ColorRect" parent="board/bottomRight/Button9" unique_id=1880462996]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 10.0
+offset_bottom = 34.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO2" type="ColorRect" parent="board/bottomRight/Button9/shapeO" unique_id=1655079687]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO3" type="ColorRect" parent="board/bottomRight/Button9/shapeO" unique_id=791474370]
+layout_mode = 0
+offset_left = 28.051407
+offset_top = 0.0049614906
+offset_right = 31.765095
+offset_bottom = 28.167587
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeO4" type="ColorRect" parent="board/bottomRight/Button9/shapeO" unique_id=796995450]
+layout_mode = 0
+offset_left = 28.050303
+offset_top = 25.172356
+offset_right = 31.882908
+offset_bottom = 53.23668
+rotation = 1.5691136
+color = Color(0.8862745, 0.6313726, 0.31764707, 1)
+
+[node name="shapeX" type="ColorRect" parent="board/bottomRight/Button9" unique_id=540205112]
+visible = false
+layout_mode = 0
+offset_left = 29.0
+offset_top = 8.0
+offset_right = 33.0
+offset_bottom = 37.0
+rotation = 0.7853982
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="shapeX2" type="ColorRect" parent="board/bottomRight/Button9/shapeX" unique_id=1234914881]
+layout_mode = 0
+offset_left = -12.020814
+offset_top = 16.263454
+offset_right = -8.020814
+offset_bottom = 45.263454
+rotation = -1.5707964
+color = Color(0.72156864, 0.25882354, 0.25882354, 1)
+
+[node name="Lines" type="ColorRect" parent="board/bottomRight" unique_id=680931719 groups=["lines"]]
+offset_left = 41.0
+offset_right = 45.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines2" type="ColorRect" parent="board/bottomRight" unique_id=2105670245 groups=["lines"]]
+offset_left = 87.0
+offset_right = 91.0
+offset_bottom = 132.0
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines3" type="ColorRect" parent="board/bottomRight" unique_id=1458186197 groups=["lines"]]
+offset_left = 133.0
+offset_top = 41.000008
+offset_right = 137.0
+offset_bottom = 174.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="Lines4" type="ColorRect" parent="board/bottomRight" unique_id=1298174230 groups=["lines"]]
+offset_left = 133.0
+offset_top = 87.0
+offset_right = 137.0
+offset_bottom = 220.0
+rotation = 1.5707964
+color = Color(0.9411765, 0.9098039, 0.7176471, 1)
+
+[node name="lines" type="ColorRect" parent="board" unique_id=356991334 groups=["lines"]]
+offset_left = 466.0
+offset_top = 74.0
+offset_right = 491.0
+offset_bottom = 586.0
+color = Color(0.84705883, 0.78039217, 0.56078434, 1)
+
+[node name="lines2" type="ColorRect" parent="board" unique_id=1554020643 groups=["lines"]]
+offset_left = 634.0
+offset_top = 75.0
+offset_right = 659.0
+offset_bottom = 586.0
+color = Color(0.84705883, 0.78039217, 0.56078434, 1)
+
+[node name="lines3" type="ColorRect" parent="board" unique_id=1257652168 groups=["lines"]]
+offset_left = 817.0
+offset_top = 235.00002
+offset_right = 842.0
+offset_bottom = 748.0
+rotation = 1.5707964
+color = Color(0.84705883, 0.78039217, 0.56078434, 1)
+
+[node name="lines4" type="ColorRect" parent="board" unique_id=1843429546 groups=["lines"]]
+offset_left = 817.19617
+offset_top = 402.0
+offset_right = 842.19617
+offset_bottom = 913.64966
+rotation = 1.5707964
+color = Color(0.84705883, 0.78039217, 0.56078434, 1)
+
+[connection signal="pressed" from="inGameUI/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonPlay/ButtonPlay" to="." method="_on_button_play_pressed"]
+[connection signal="pressed" from="StartScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="GameOverScreen/ButtonExit/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="board/topLeft/Button" to="board/topLeft/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button2" to="board/topLeft/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button3" to="board/topLeft/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button4" to="board/topLeft/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button5" to="board/topLeft/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button6" to="board/topLeft/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button7" to="board/topLeft/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button8" to="board/topLeft/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/topLeft/Button9" to="board/topLeft/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button" to="board/topMiddle/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button2" to="board/topMiddle/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button3" to="board/topMiddle/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button4" to="board/topMiddle/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button5" to="board/topMiddle/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button6" to="board/topMiddle/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button7" to="board/topMiddle/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button8" to="board/topMiddle/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/topMiddle/Button9" to="board/topMiddle/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button" to="board/topRight/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button2" to="board/topRight/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button3" to="board/topRight/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button4" to="board/topRight/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button5" to="board/topRight/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button6" to="board/topRight/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button7" to="board/topRight/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button8" to="board/topRight/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/topRight/Button9" to="board/topRight/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button" to="board/middleLeft/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button2" to="board/middleLeft/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button3" to="board/middleLeft/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button4" to="board/middleLeft/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button5" to="board/middleLeft/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button6" to="board/middleLeft/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button7" to="board/middleLeft/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button8" to="board/middleLeft/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/middleLeft/Button9" to="board/middleLeft/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button" to="board/middleMiddle/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button2" to="board/middleMiddle/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button3" to="board/middleMiddle/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button4" to="board/middleMiddle/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button5" to="board/middleMiddle/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button6" to="board/middleMiddle/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button7" to="board/middleMiddle/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button8" to="board/middleMiddle/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/middleMiddle/Button9" to="board/middleMiddle/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button" to="board/middleRight/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button2" to="board/middleRight/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button3" to="board/middleRight/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button4" to="board/middleRight/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button5" to="board/middleRight/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button6" to="board/middleRight/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button7" to="board/middleRight/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button8" to="board/middleRight/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/middleRight/Button9" to="board/middleRight/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button" to="board/bottomLeft/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button2" to="board/bottomLeft/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button3" to="board/bottomLeft/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button4" to="board/bottomLeft/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button5" to="board/bottomLeft/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button6" to="board/bottomLeft/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button7" to="board/bottomLeft/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button8" to="board/bottomLeft/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomLeft/Button9" to="board/bottomLeft/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button" to="board/bottomMiddle/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button2" to="board/bottomMiddle/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button3" to="board/bottomMiddle/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button4" to="board/bottomMiddle/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button5" to="board/bottomMiddle/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button6" to="board/bottomMiddle/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button7" to="board/bottomMiddle/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button8" to="board/bottomMiddle/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomMiddle/Button9" to="board/bottomMiddle/Button9" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button" to="board/bottomRight/Button" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button2" to="board/bottomRight/Button2" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button3" to="board/bottomRight/Button3" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button4" to="board/bottomRight/Button4" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button5" to="board/bottomRight/Button5" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button6" to="board/bottomRight/Button6" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button7" to="board/bottomRight/Button7" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button8" to="board/bottomRight/Button8" method="_on_pressed"]
+[connection signal="pressed" from="board/bottomRight/Button9" to="board/bottomRight/Button9" method="_on_pressed"]
